@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Login or Register to shop online with Reliance Digital</title>
+</head>
+<style>
+  body{
+    margin: 0px;
+  
+  }
+#navCont{
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+  #nav01{
+    height:30px;
+    background-color: #E42529;
+    font-size: 17px;
+display: grid;
+grid-template-columns: repeat(7,1fr);
+align-items: center;
+text-align: center;
+border-bottom: 1px solid white;
+  }
+  #nav01>a{
+    border-right: 1px solid white;
+font-weight: bold;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-decoration: none;
+display: block;
+  }
+  #nav1{
+   display: flex;
+   height: 70px;
+  
+  }
+
+  #nav1>div:nth-child(1){
+   width: 25%;
+   background-color: #E42529;
+  }
+  #nav1>div:nth-child(1)>img{
+   width: 50%;
+ margin: 10px 0px 0px 45px;
+
+  }
+  #nav1>div:nth-child(2){
+   width: 50%;
+   background-color: #E42529;
+  }
+  #nav1>div>input{
+   width: 73%;
+   display: block;
+   margin: auto;
+   padding: 11px;
+ margin-top: 18px;
+   border-radius: 30px;
+   border: none;
+  }
+
+  #nav1>div:nth-child(3){
+   width: 25%;
+   font-size: 17px;
+   padding-left: 20px;
+   
+   background-color: #E42529;
+   padding-top: 20px;
+  }
+  #nav1>div:nth-child(3)>a{
+border-right: 1px solid white;
+padding: 0px 6px;
+color: white;
+text-decoration: none;
+
+  }
+
+  #nav1>div:nth-child(3)>a:nth-child(3){
+border-right: none;
+  }
+
+
+  #nav1>div>a>img{
+   width: 2vw;
+  }
+
+  
+  #nav2{
+   display: flex;
+   justify-content: space-around;
+   height: 40px;
+   background-color: #1F4985;
+  }
+ 
+  .dropdown{
+   position: relative;
+  }
+  .dropdown-content{
+   padding:20px 50px;
+   width: 15vw;
+   position: absolute;
+   z-index: 1;
+   display: none;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   background-color: darkblue;
+   
+  }
+  .dropdown:hover .dropdown-content{
+ display: block;
+}
+  #nav2>.dropdown:nth-child(8)>.dropdown-content,#nav2>.dropdown:nth-child(9)>.dropdown-content{right: 0px;
+   
+  }
+
+.dropdown>button:hover{
+ background-color: red;
+}
+.dropdown>button{
+ border: none;
+ font-size: 12px;
+ background-color: #1F4985;
+color: white;
+height: 100%;
+}
+.dropdown-content>a{
+ margin-bottom: 20px;
+ display: block;
+ text-decoration: none;
+ color: white;
+}
+
+
+
+
+
+
+
+
+
+
+#footer{
+width: 100%;
+
+background-color: #0A244A;
+}
+
+#footer>div:nth-child(1){
+display: flex;
+
+background-color: #1F4985;
+justify-content: space-evenly;
+
+}
+#footer>div:nth-child(1)>div{
+
+ width: 20%;
+ background-color: #1F4985;
+}
+#footer>div:nth-child(1)>div>a{
+ display: block;
+ margin-bottom: 12px;
+ text-decoration: none;
+ color: white;
+ font-size: 18px;
+}
+#footer>div:nth-child(1)>div>h3{
+ color: white;
+}
+#footer>div:nth-child(2){
+ display: flex;
+ justify-content: space-around;
+ background-color:#1F4985;
+ padding-bottom: 20px;
+}
+#footer>div:nth-child(2)>div:nth-child(1){
+ border:1px solid #1F4985;
+ width: 15%;
+ padding-left: 25px;
+ color: white;
+ background-color:#1F4985;
+}
+#footer>div:nth-child(2)>div:nth-child(2){
+ border:1px solid #1F4985;
+ width: 70%;
+ padding-left: 70px;
+ color: white;
+ background-color:#1F4985 ;
+ 
+}
+#footer>div:nth-child(2)>div>img{
+width: 10%;
+border-radius: 7px;
+}
+#footer>div:nth-child(3){
+ text-align: center;
+ color: white;
+ background-color: #0A244A;
+ padding-bottom: 5px;
+ 
+}
+#footer>div:nth-child(3)>h4:nth-child(1){
+text-decoration: underline;
+
+}
+
+</style>
+<body>
+  <!--Header Below-->
+  <div id="nav01">
+   <a href="" >Our Brand Promise</a>
+   <a href="">Easy Return</a>
+   <a href="">Next Day Delivery</a>
+   <a href="">Service Guarantee</a><a href="">Unmatched Network</a><a href="">Find a Store</a><a href="">Contact Us</a>
+ </div>
+  <div id="navCont">
+   
+   <div id="nav1">
+    <div>
+     <img src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="Error">
+    </div>
+    <div>
+     <input type="text" placeholder="Find your favourite products">
+    </div>
+    <div>
+    
+     <a href=""> Select your location</a>
+     <a href="" ><img src="https://www.freeiconspng.com/uploads/basket-cart-icon-27.png"  alt="basket cart icon" style="width:1.5vw ;"/> Cart</a>
+ 
+     <a href="login.html" ><img src="https://www.freeiconspng.com/uploads/black-login-icon--0.png"  alt="black Login icon " style="width:1.5vw ;"/> Login</a>
+    </div>
+   </div>
+   <div id="nav2">
+    <div class="dropdown">
+       <button>MOBILES & TABLETS &#709;</button>
+       <div class="dropdown-content">
+        <a href="">Smartphones</a><a href=""> OnePlus Nord 2T 5G</a><a href=""> Wearable Technology</a><a href="">Smart Watch Accessories</a><a href="">  Accessories</a><a href="">Tablet Accessories</a><a href=""> Mobile Accessories</a><a href=""> Mobile Grips & Stands</a><a href="">  Car Mobile Holders</a>
+       </div>
+    </div>
+    <div class="dropdown">
+     <button>TELEVISIONS &#709;</button>
+     <div class="dropdown-content">
+      <a href="">Smart TV's</a><a href=""> 32 inch TV's</a><a href="">43 inch TV's</a><a href="">55 inch TV's</a><a href="">  Android TV's</a>
+     </div>
+  </div>
+  <div class="dropdown">
+   <button>HEADPHONES & SPEAKERS &#709;</button>
+   <div class="dropdown-content">
+    <a href="">Headphones & Headsets</a><a href=""> True Wireless</a><a href="">Bluetooth Neckbands</a><a href="">Wired Earphones</a><a href=""> On Ear Headphones</a><a href=""> Noise Cancelling Headphones</a>
+   </div>
+ </div>
+ <div class="dropdown">
+  <button>HOME APPLIANCES &#709;</button>
+  <div class="dropdown-content">
+   <a href="">Air Conditioners</a><a href="">  Split Air Conditioners</a><a href=""> Window Air Conditioners</a><a href="">Smart Air Conditioners</a><a href="">   1 ton Air Conditioners</a><a href=""> 1.5 ton Air Conditioners</a><a href="">   5 star Air Conditioners</a>
+  </div>
+ </div>
+ <div class="dropdown">
+  <button>COMPUTERS &#709;</button>
+  <div class="dropdown-content">
+   <a href="">Laptops</a><a href=""> Basic use laptops</a><a href=""> Student Laptops</a><a href="">Thin and light Laptops</a><a href="">   Multi-Tasking Laptops</a><a href=""> Gaming Laptops</a><a href="">Content creator Laptops</a><a href=""> Desktops & All-In-Ones</a><a href="">  Computer Monitor</a>
+  </div>
+ </div>
+ <div class="dropdown">
+  <button>CAMERAS &#709;</button>
+  <div class="dropdown-content">
+   <a href="">DSLR Cameras</a><a href="">  Mirrorless Cameras</a><a href="">  Point & Shoot Cameras</a><a href=""> ProSumer Cameras</a><a href="">  Action Cameras</a>
+  </div>
+ </div>
+ <div class="dropdown">
+  <button>KITCHEN APPLIANCES &#709;</button>
+  <div class="dropdown-content">
+   <a href="">Microwave Ovens</a><a href="">  Water Purifiers</a><a href="">    Fruits and Vegetable Cleaner</a><a href=""> Oven Toaster Grillers (OTG)</a><a href=""> Cookwares</a><a href="">Tablet Accessories</a><a href="">  Juicer Mixer Grinders</a>
+ </div>
+ </div>
+ <div class="dropdown">
+  <button>PERSONAL CARE &#709;</button>
+  <div class="dropdown-content">
+   <a href="">Shavers & Trimmers</a><a href=""> Epilators</a><a href="">  Hair Dryers & Stylers</a><a href="">  Weighing Scales</a><a href="">  Accessories</a><a href="">Irons</a>
+  </div>
+ </div>
+ <div class="dropdown">
+  <button>ACCESSORIES &#709;</button>
+  <div class="dropdown-content">
+   <a href="">Batteries & PowerBanks</a><a href=""> Cables & Cords</a><a href="">  Chargers & Adapters</a><a href="">Bluetooth & WiFi Speakers</a><a href=""> Audio/Video Accessories</a><a href="">Reconnect Disney</a><a href=""> Memory Cards</a><a href="">  Mounts & Stands</a><a href="">  Pen Drives</a>
+ 
+ </div>
+ 
+  
+  
+  </div>
+  </div>
+ </div>
+
+<!--Content Below-->
+<form >
+ <div><h2>Login/Register</h2></div>
+ 
+</form>
+
+ <!--Footer Below-->
+ <div id="footer">
+  <div>
+   <div>
+    <h3>PRODUCT CATEGORIES</h3>
+   <a href="">Smartphones</a> 
+   <a href="">Laptops</a> 
+   <a href="">DSLR Cameras</a> 
+   <a href="">Televisions</a> 
+   <a href="">Air Conditioners</a> 
+   <a href="">Refrigerators</a> 
+   <a href="">Kitchen Appliances</a> 
+   <a href="">Accessories</a> 
+   <a href="">Personal Care & Grooming</a> 
+   
+  
+   </div>
+   <div>
+    <h3>SITE INFO</h3>
+    <a href="">About Reliance Digital</a> 
+    <a href="">resQ Services</a> 
+    <a href="">Site Map</a> 
+    <a href="">Gift Cards</a> 
+    <a href="">Corporate Enquiries</a> 
+    <a href="">Contact Us</a> 
+
+   </div>
+   <div>
+    <h3>RESOURCE CENTRE</h3>
+    <a href="">Product Reviews</a> 
+    <a href="">Buying Guides</a> 
+    <a href="">DSLR Cameras</a> 
+    <a href="">How Tos</a> 
+    <a href="">Featured Stories</a> 
+    <a href="">Events and Happenings</a> 
+   </div>
+   <div>
+    <h3>POLICIES</h3>
+    <a href="">Terms of Use</a> 
+    <a href="">FAQs</a> 
+    <a href="">Cancellation and Return Policy</a> 
+    <a href="">Pricing and Payments Policy</a> 
+    <a href="">Privacy Policy</a> 
+    <a href="">E-Waste Policy</a> 
+    <a href="">EMI and Additional Cashback T&C</a>
+    <a href="">RelianceOne Loyalty Program T&C</a> 
+    
+   </div>
+   
+  </div>
+  <div>
+   <div><h3>FOLLOW US</h3>
+    <img src="https://www.freeiconspng.com/uploads/-van-de-laatste-nieuwsberichten-volg-ons-via-twitter-en-facebook-4.png"/>
+ <img src="https://www.freeiconspng.com/uploads/twitter-icon--flat-gradient-social-iconset--limav-2.png"/>
+</div>
+<div><h3>EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h3>
+<img src="https://www.reliancedigital.in/build/client/images/google_play_store.png" alt="" style="width:15% ;">
+<img src="https://www.reliancedigital.in/build/client/images/ios_app_store_icon.png" alt="" style="width:15% ;">
+</div>
+</div>
+  <div>
+   <h4>Disclaimer</h4>
+   <h5 style="width: 90%;margin:auto;margin-top:-10px ">Product prices, offers and availability are subject to change from time to time. All prices are inclusive of taxes. Product colours & images are only for illustration and they may not exactly match with the actual product. Product specs are subject to change & may vary from actual product. While every care is taken to avoid inaccuracies in content, these are provided as is, without warranty of any kind.</h5>
+   <hr>
+   <h4>© 2022 Reliance Digital. All Rights Reserved.</h4>
+  </div>
+ </div>
+</body>
+</html>
+</body>
+</html>
