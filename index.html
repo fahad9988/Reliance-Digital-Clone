@@ -8,11 +8,34 @@
 
  <style>
   body{
-   margin: 0px;
+    margin: 0px;
+  
+  }
+#navCont{
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+  #nav01{
+    height:auto;
+    background-color: #E42529;
+    font-size: 17px;
+padding-left: 73.8%;
+
+  }
+  #nav01>a{
+    border-right: 1px solid white;
+padding: 0px 6px;
+color: white;
+text-decoration: none;
+  }
+  #nav01>a:nth-child(3){
+    border:none;
   }
   #nav1{
    display: flex;
-   height: 105px;
+   height: 70px;
+  
   }
 
   #nav1>div:nth-child(1){
@@ -21,46 +44,44 @@
   }
   #nav1>div:nth-child(1)>img{
    width: 50%;
-   margin: 40px 0px 0px 50px ;
+ margin: 10px 0px 0px 45px;
 
   }
   #nav1>div:nth-child(2){
-   width: 45%;
+   width: 50%;
    background-color: #E42529;
   }
   #nav1>div>input{
-   width: 80%;
+   width: 73%;
    display: block;
    margin: auto;
    padding: 11px;
-   margin-top:50px ;
+ margin-top: 18px;
    border-radius: 30px;
    border: none;
   }
 
   #nav1>div:nth-child(3){
-   width: 30%;
+   width: 25%;
    font-size: 17px;
-   padding-left: 150px;
+   padding-left: 20px;
+   
    background-color: #E42529;
-   padding-top: 10px;
+   padding-top: 20px;
   }
   #nav1>div:nth-child(3)>a{
 border-right: 1px solid white;
 padding: 0px 6px;
 color: white;
 text-decoration: none;
+
   }
 
-  #nav1>div:nth-child(3)>a:nth-child(3),#nav1>div:nth-child(3)>a:nth-child(8){
+  #nav1>div:nth-child(3)>a:nth-child(3){
 border-right: none;
   }
-#nav1>div:nth-child(3)>a:nth-child(6){
- padding-left: 33px;
-}
-#nav1>div:nth-child(3)>a:nth-child(8){
-font-size: 15px;
-  }
+
+
   #nav1>div>a>img{
    width: 2vw;
   }
@@ -84,6 +105,7 @@ font-size: 15px;
    display: none;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    background-color: darkblue;
+   
   }
   .dropdown:hover .dropdown-content{
  display: block;
@@ -189,11 +211,445 @@ text-decoration: underline;
 
 }
 
+
+#content>div{
+  border: 1px solid grey;
+}
+
+#content>div:nth-child(1)>img,#content>div:nth-child(2) img,#content>div:nth-child(7) img{
+ margin-bottom: -5px;
+ width: 100%;
+}
+
+#content>div:nth-child(2){
+  position: relative;
+
+
+}
+#content>div:nth-child(2) button{
+  position: absolute;
+  top: 43%;
+  font-size: 30px;
+  border: none;
+  background-color: rgba(100,100,100,0);
+}
+#content>div:nth-child(2) button:hover{
+  color: grey;
+}
+#content>div:nth-child(2) button:nth-child(2){
+  right: 10px;
+}
+#content>div:nth-child(2) button:nth-child(3){
+  left: 10px;
+}
+#LatestLaptops{
+  width: 90%;
+ display: grid;
+grid-template-columns: repeat(5,1fr);
+margin: auto;
+gap: 20px;
+
+}
+#LatestLaptops>div>img{
+  width: 70%;
+display: block;
+margin: auto;
+}
+#LatestLaptops>div>p,s{
+  color: rgb(138, 138, 138);
+}
+#LatestLaptops>div>p:nth-child(3),s{
+  margin-bottom: -15px;
+  display: block;
+}
+#LatestLaptops>div>p:nth-child(3)>span{
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+}
+#content>div:nth-child(3)>h2{
+margin-left: 30px;
+}
+
+#content>div:nth-child(3){
+  position: relative;
+
+}
+#content>div:nth-child(3) button{
+  position: absolute;
+  top: 43%;
+  font-size: 30px;
+  height: 100px;
+  background-color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#content>div:nth-child(3) button:hover{
+  color:grey;
+}
+#content>div:nth-child(3) button:nth-child(3){
+  left: 10px;
+}
+#content>div:nth-child(3) button:nth-child(4){
+  right: 10px;
+}
+
+#SmallAppliances{
+  width: 90%;
+ display: grid;
+grid-template-columns: repeat(5,1fr);
+margin: auto;
+gap: 20px;
+
+}
+#SmallAppliances>div>img{
+  width: 70%;
+display: block;
+margin: auto;
+}
+#SmallAppliances>div>p,s{
+  color: rgb(138, 138, 138);
+}
+#SmallAppliances>div>p:nth-child(3),s{
+  margin-bottom: -15px;
+  display: block;
+}
+#SmallAppliances>div>p:nth-child(3)>span{
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+}
+#content>div>h2{
+margin-left: 30px;
+}
+
+#content>div:nth-child(4){
+  position: relative;
+ 
+}
+#content>div:nth-child(4) button{
+  position: absolute;
+  top: 43%;
+  font-size: 30px;
+  height: 100px;
+  background-color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#content>div:nth-child(4) button:hover{
+  color:grey;
+}
+#content>div:nth-child(4) button:nth-child(3){
+  left: 10px;
+}
+#content>div:nth-child(4) button:nth-child(4){
+  right: 10px;
+}
+
+
+#content>div:nth-child(5)>div{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+width: 95%;
+margin: auto;
+margin-bottom: -4px;
+gap: 28px;
+}
+#content>div:nth-child(5)>div>div>img{
+width: 100%;
+}
+
+
+#content>div:nth-child(6)>div{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+width: 95%;
+margin: auto;
+gap: 2px 30px;
+}
+#content>div:nth-child(6)>div>div>img{
+width: 100%;
+}
+
+
+
+#content>div:nth-child(7){
+  position: relative;
+
+
+}
+#content>div:nth-child(7) button{
+  position: absolute;
+  top: 43%;
+  font-size: 30px;
+  border: none;
+  background-color: rgba(100,100,100,0);
+}
+#content>div:nth-child(7) button:hover{
+  color: grey;
+}
+#content>div:nth-child(7) button:nth-child(2){
+  right: 10px;
+}
+#content>div:nth-child(7) button:nth-child(3){
+  left: 10px;
+}
+#content>div:nth-child(7) img{
+  margin-top: -3px;
+}
+
+
+
+#Range{
+  width: 90%;
+ display: grid;
+grid-template-columns: repeat(5,1fr);
+margin: auto;
+gap: 20px;
+
+}
+#Range>div>img{
+  width: 70%;
+display: block;
+margin: auto;
+}
+#Range>div>a{
+ color: rgb(102, 101, 101);
+ text-decoration: none;
+ text-align: center;
+ font-size: 20px;
+ display: block;
+ margin-top: 40px;
+}
+
+
+#content>div:nth-child(8)>h2{
+text-align: center;
+margin-bottom: 70px;
+}
+
+#content>div:nth-child(8){
+  position: relative;
+
+}
+#content>div:nth-child(8)>button{
+  position: absolute;
+  top: 43%;
+  font-size: 30px;
+  height: 100px;
+  background-color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#content>div:nth-child(8)>button:hover{
+  color:grey;
+}
+#content>div:nth-child(8)>button:nth-child(3){
+  left: 10px;
+}
+#content>div:nth-child(8)>button:nth-child(4){
+  right: 10px;
+}
+#content>div:nth-child(8)>a{
+  display: block;
+ text-align: center;
+ margin-top: 25px;
+ margin-bottom: 15px;
+}
+#content>div:nth-child(8)>a>button{
+  font-size: 18px;
+  padding: 15px 25px;
+  border-radius: 25px;
+  color: white;
+  background-color: #1F4985;
+  border: none;
+}
+#content>div:nth-child(8)>a>button:hover{
+  font-size: 18px;
+  padding: 15px 25px;
+  border-radius: 25px;
+  color: #1F4985;
+  background-color: white;
+  border:1px solid #1F4985;;
+}
+
+
+#content>div:nth-child(9){
+ 
+  padding-bottom: 40px;
+}
+#content>div:nth-child(9)>h2{
+ 
+ text-align: center;
+ color: #1F4985;
+}
+#content>div:nth-child(9)>div{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+width: 95%;
+margin: auto;
+margin-bottom: -4px;
+gap: 28px;
+}
+#content>div:nth-child(9)>div>div{
+border: 1px solid rgb(221, 219, 219);
+background-color: rgb(248, 244, 244);
+text-align: center;
+padding-top: 6px;
+border-radius: 10px;
+}
+#content>div:nth-child(9)>div>div:nth-child(3){
+  padding-top: 12px;
+}
+#content>div:nth-child(9)>div>div>h4{
+margin-top: -4px;
+margin-bottom: -13px;
+color: #1F4985;
+}
+#content>div:nth-child(9)>div>div:nth-child(3)>h4{
+margin-top: 7px;
+}
+#content>div:nth-child(9)>div>div>p{
+color: grey;
+font-size: 10px;
+}
+
+
+
+
+
+#SmartWatches{
+  width: 90%;
+ display: grid;
+grid-template-columns: repeat(4,1fr);
+margin: auto;
+gap: 20px;
+
+padding-right: 40px;
+}
+
+#SmartWatches>div>img{
+  width: 70%;
+display: block;
+margin: auto;
+}
+#SmartWatches>div>p,s{
+  color: rgb(138, 138, 138);
+}
+#SmartWatches>div>p:nth-child(3),s{
+  margin-bottom: -15px;
+  display: block;
+}
+#SmartWatches>div>p:nth-child(3)>span{
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+}
+#div10>h2{
+  margin-left: 30px;
+}
+
+#div10>div{
+  position: relative;
+
+display: flex;
+padding-left: 30px;
+}
+#div10>div>div:nth-child(1)>img{
+  width: 80%;
+}
+#div10 button{
+  position: absolute;
+  top: 30%;
+  font-size: 30px;
+  height: 100px;
+  background-color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#div10 button:hover{
+  color:grey;
+}
+#div10 button:nth-child(3){
+  left: 25%;
+}
+#div10 button:nth-child(4){
+  right: 10px;
+}
+
+
+
+
+#TCL{
+  width: 90%;
+ display: grid;
+grid-template-columns: repeat(4,1fr);
+margin: auto;
+gap: 20px;
+
+padding-left: 70px;
+margin-right: 110px;
+}
+
+#TCL>div>img{
+  width: 70%;
+display: block;
+margin: auto;
+}
+#TCL>div>p,s{
+  color: rgb(138, 138, 138);
+}
+#TCL>div>p:nth-child(3),s{
+  margin-bottom: -15px;
+  display: block;
+}
+#TCL>div>p:nth-child(3)>span{
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+}
+#div11>h2{
+  margin-left: 30px;
+}
+
+#div11>div{
+  position: relative;
+
+display: flex;
+
+}
+#div11>div>div:nth-child(4)>img{
+  width: 85%;
+}
+#div11 button{
+  position: absolute;
+  top: 30%;
+  font-size: 30px;
+  height: 100px;
+  background-color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#div11 button:hover{
+  color:grey;
+}
+#div11 button:nth-child(2){
+  left: 10px;
+}
+#div11 button:nth-child(3){
+  right: 25%;
+}
  </style>
 </head>
 <body>
  <!--Header Below-->
+ <div id="nav01">
+  <a href="" ><img src="https://www.freeiconspng.com/uploads/location-icon-png-0.png"  alt=" Location" style="width: 1.7vw;" />Find a store</a>
+  <a href="">Buying Guides</a>
+  <a href="">Contact us</a>
+</div>
  <div id="navCont">
+  
   <div id="nav1">
    <div>
     <img src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="Error">
@@ -202,15 +658,11 @@ text-decoration: underline;
     <input type="text" placeholder="Find your favourite products">
    </div>
    <div>
-    <a href="" ><img src="https://www.freeiconspng.com/uploads/location-icon-png-0.png"  alt=" Location" style="width: 1.7vw;" />Find a store</a>
-    <a href="">Buying Guides</a>
-    <a href="">Contact us</a>
-<br>
-<br>
+   
     <a href=""> Select your location</a>
     <a href="" ><img src="https://www.freeiconspng.com/uploads/basket-cart-icon-27.png"  alt="basket cart icon" style="width:1.5vw ;"/> Cart</a>
 
-    <a href="" ><img src="https://www.freeiconspng.com/uploads/black-login-icon--0.png"  alt="black Login icon " style="width:1.5vw ;"/> Login</a>
+    <a href="login.html" ><img src="https://www.freeiconspng.com/uploads/black-login-icon--0.png"  alt="black Login icon " style="width:1.5vw ;"/> Login</a>
    </div>
   </div>
   <div id="nav2">
@@ -273,16 +725,152 @@ text-decoration: underline;
  
  </div>
  </div>
+</div>
+
+
 
 <!--Content Below-->
+<div id="content">
+  <!--1ST DIV BELOW-->
+  <div>
+    <img src="https://www.reliancedigital.in/medias/Boot-Up-ICICI-Offer-Carousel-Banner-14-07-2022.jpg?context=bWFzdGVyfGltYWdlc3wyNTQ0MDh8aW1hZ2UvanBlZ3xpbWFnZXMvaDgxL2hmNS85ODYxNDY0NjIxMDg2LmpwZ3xmYzQzYzE3MTg1YTk5MjE5OWU4ZTE3ODYzNjU1ZmIxYzg1Mjc0YThjZmMyYWYxNGE2NjRmZjM2OTNkMTI5NDMx" alt="">
+  </div>
+<!--1ST DIV ABOVE-->
+
+<!--2ND DIV BELOW-->
+  <div >
+    <div>
+      <img id="crauser1" src="https://www.reliancedigital.in/medias/Samsung-Galaxy-M52-Desktop-20.06.jpg?context=bWFzdGVyfGltYWdlc3wxMDgyNjF8aW1hZ2UvanBlZ3xpbWFnZXMvaDRmL2gwYy85ODYxOTc2NDkwMDE0LmpwZ3w5N2EzMDE4MWQ4ZTI5MmE1NDRkNjRlODJkYWNhNjJkYzQ5YzBiMDdjMThhYjhkOWU2MTAyM2YzZGQxNWIyYzk0" alt="">
+      <button id="rightbtn1">></button>
+      <button id="leftbtn1"><</button>
+    </div>
+  </div>
+<!--2ND DIV ABOVE-->
+
+<!--3RD DIV Below-->
+<div>
+  <h2>BEST DEALS ON LATEST LAPTOPS | <a href="" style="font-size: 16px;text-decoration:none">View All</a></h2>
+  <div id="LatestLaptops"></div>
+  <button id="leftbtn2"><</button>
+  <button id="rightbtn2">></button>
+</div>  
+<!--3RD DIV ABOVE-->
+
+<!--4TH DIV BELOW-->
+<div>
+  <h2>LOWEST PRICES ON SMALL APPLIANCES | <a href="" style="font-size: 16px;text-decoration:none">View All</a></h2>
+  <div id="SmallAppliances"></div>
+  <button id="leftbtn3"><</button>
+  <button id="rightbtn3">></button>
+</div>
+<!--4th div above-->
+
+<!--5TH DIV BELOW-->
+<div>
+  <h2>TOP BRANDS - WASHING MACHINE</h2>
+  <div >
+    <div><img src="https://www.reliancedigital.in/medias/Sansui-Washing-Machines-18-07-2022.jpg?context=bWFzdGVyfGltYWdlc3wyNjM0NHxpbWFnZS9qcGVnfGltYWdlcy9oNjEvaDA4Lzk4NjE5ODU3OTYxMjYuanBnfDdjMmNkOWMyNTFlNTAyYTBkNjg3ZWMxYjBmMGNlYzQwMzkzZjc2Y2QyOGM4MzRiNDYxYmQ5ZjU3MmZhNjE4NjI" alt=""> </div>
+    <div><img src="https://www.reliancedigital.in/medias/Samsung-Washing-Machines-18-07-2022.jpg?context=bWFzdGVyfGltYWdlc3wyMzc1OHxpbWFnZS9qcGVnfGltYWdlcy9oZmYvaDc1Lzk4NjE5ODU4NjE2NjIuanBnfDVhZWRlNjAzYmE2MWUxNGNiMTgyMTIwODM0ZTBhYTg5ZmJkZDEyZTA5YmFkYmYwMTNiZWE5YTBmMGQyMzcyMzE" alt=""></div>
+    <div><img src="https://www.reliancedigital.in/medias/LG-Washing-Machines-18-07-2022.jpg?context=bWFzdGVyfGltYWdlc3wyNzk1MXxpbWFnZS9qcGVnfGltYWdlcy9oNDkvaGY4Lzk4NjE5ODU5OTI3MzQuanBnfGY3NzdiYzA0MDFkZjhmNTRlYTI5ODgyYWM5MTdjNjI0ZjZjNjlhY2E3YTIwNTI2MzllYTI5MGQxY2Q0Mjg4Yjk" alt=""></div>
+    <div><img src="https://www.reliancedigital.in/medias/Candy-Washing-Machines-18-07-2022.jpg?context=bWFzdGVyfGltYWdlc3wyMjEyNXxpbWFnZS9qcGVnfGltYWdlcy9oYjUvaDAwLzk4NjE5ODYxMjM4MDYuanBnfDU5MzBjMmRjZThmNTYyZWY1ZmIyYTNlMDdlYzg1YWFkYzlhZWVmNTE3MjM0ZTM3MGNmOTBlMDZiNDIwM2Y4YmQ" alt=""></div>
+  </div>
+ 
+</div>
+<!--5TH DIV ABOVE-->
+
+<!--6TH DIV BELOW-->
+<div>
+  <h2>OFFERS YOU CANNOT MISS</h2>
+  <div >
+    <div><img src="https://www.reliancedigital.in/medias/Apple-Watch-offers-u-cannot-miss.jpg?context=bWFzdGVyfGltYWdlc3w0MTg3MnxpbWFnZS9qcGVnfGltYWdlcy9oODkvaDQzLzk4NjAxMDc3NjM3NDIuanBnfDM2MzQ3MzZkNzhhZGE3YzdkMmRkMmQxYWJiYjVlMTdjNWNjYzk2M2NiNzgxNGRiZWNmOGU0YTRhMTI3NmI0ZmQ" alt=""> </div>
+    <div><img src="https://www.reliancedigital.in/medias/OFFERS-YOU-CANNOT-MISS-Water-Purifier.jpg?context=bWFzdGVyfGltYWdlc3w0MDU5NXxpbWFnZS9qcGVnfGltYWdlcy9oZjYvaDU4Lzk4NTc1MDkyNjEzNDIuanBnfDc0ZTMxNzIzMjI4YWRiOGFhYjg3NGJiZjlkYmRiYWY2NDI4MjA2YmVmY2FhYjA2MDYzN2FiN2ZhM2FlMzVjNjI" alt=""></div>
+    <div><img src="https://www.reliancedigital.in/medias/Kodak-HD-Ready-LED-Smart-TV.jpg?context=bWFzdGVyfGltYWdlc3w3NTIyMnxpbWFnZS9qcGVnfGltYWdlcy9oNDIvaDk3Lzk4NjI0NTc1ODk3OTAuanBnfGFkNzcyMDQ2MGIyZDkyYWVjYjZkM2Q0OWIzOGIyZmMxMGZkM2Q1MGZmOGY2MjRhODU3ZDAxOWEzMDQ0YWI5N2E" alt=""></div>
+    <div><img src="https://www.reliancedigital.in/medias/Samsung-190L-Single-Door-Refrigerator.jpg?context=bWFzdGVyfGltYWdlc3w0MjAwN3xpbWFnZS9qcGVnfGltYWdlcy9oZWYvaDY4Lzk4NjEyODA0NjQ5MjYuanBnfDAyODcwNGM3ZGQxYjcxODIyZDQ1YmY5ZDY3NjIzNTZhMGU0N2VhMjBkNzU1ZmJkNmIwN2QzNzQyODYwNWU4NGI" alt=""></div>
+    <div><img src="https://www.reliancedigital.in/medias/HP-Laptops.jpg?context=bWFzdGVyfGltYWdlc3w1NzM0MHxpbWFnZS9qcGVnfGltYWdlcy9oMWIvaDkyLzk4NjI0NTczOTMxODIuanBnfGZjZTRmMTgxYzY2NGNhOGRiNzU4NTZhMGYzNjY5NjllYzYzZWUxNTUyYjRlZmJmZWJkZGY5NzcxOWU2YWUzN2M" alt=""></div>
+    <div><img src="https://www.reliancedigital.in/medias/Realme-C25Y-27.06.jpg?context=bWFzdGVyfGltYWdlc3w1Nzg3OXxpbWFnZS9qcGVnfGltYWdlcy9oYTgvaGJmLzk4NTc1MTEzMjU3MjYuanBnfGY4ZGY0NjRlZGYyYWQ4ZTI4NzFjMWI0MGJmMzE5NWMxNDFjYjU4YWQzMzdiNDViMzA4ZWYxOGY5ZmIyZTI0YWI" alt=""></div>
+    <div><img src="https://www.reliancedigital.in/medias/Printers-and-Inks-05.jpg?context=bWFzdGVyfGltYWdlc3w1MTIxMnxpbWFnZS9qcGVnfGltYWdlcy9oZjIvaDg4Lzk4NjI0NTc1MjQyNTQuanBnfGFiNTE0ODIwMDNmZTQxNTVhY2NhZmQyYjg1OGJjNDUxYTlhZTI0YmVmZWViOTE0YTU0M2RkMWQ4NmUxNDU0M2Q" alt=""></div>
+    <div><img src="https://www.reliancedigital.in/medias/True-Wireless-05.jpg?context=bWFzdGVyfGltYWdlc3wzNDkxOXxpbWFnZS9qcGVnfGltYWdlcy9oZTYvaDRhLzk4NjI0NTc0NTg3MTguanBnfDhhZmU1MGE5MjQ2NDBlZjZhMjhmOTZhNGI5Y2JhZmFhNWU1MmMxMDFiN2VhYzkwOGE2NmFkNjZhNjE2NzY4MjI" alt=""></div>
+  </div>
+</div>
+<!--6TH DIV ABOVE-->
+
+<!--7TH DIV BELOW-->
+<div >
+  <div>
+    <img id="crauser2" src="https://www.reliancedigital.in/medias/Oppo-Reno-8PRO-NPI-D-18.04.jpg?context=bWFzdGVyfGltYWdlc3wxMjI0MjJ8aW1hZ2UvanBlZ3xpbWFnZXMvaDM2L2g3My85ODYyNDM3NTY4NTQyLmpwZ3xkZmM1MDIxODRlYTc4MjRjMzhiODBhNmY5ZjdlYmVlMjdhOWNkMjYxMmU4Y2U2Yjk2YjA4OWNhMWRmYjMxYTFi" alt="">
+    <button id="rightbtn4">></button>
+    <button id="leftbtn4"><</button>
+  </div>
+</div>
+<!--7TH DIV ABOVE-->
+
+<!--8TH DIV BELOW-->
+<div>
+  <h2>EXPLORE OUR RANGE OF PRODUCTS</h2>
+  <div id="Range"></div>
+  <button id="leftbtn5"><</button>
+  <button id="rightbtn5">></button>
+  <a href=""><button>View All</button></a>
+</div>
+<!--8TH DIV ABOVE-->  
+
+<!--9TH DIV BELOW-->
+<div>
+<h2>THE RELIANCE DIGITAL BRAND PROMISE</h2>
+  <div >
+    <div>
+      <img src="https://www.reliancedigital.in/medias/Insta-Delivery-Brand-Promise-Icon.png?context=bWFzdGVyfGltYWdlc3wxNTM3fGltYWdlL3BuZ3xpbWFnZXMvaGI2L2gwNS85NDQ3MTcwMzQyOTQyLnBuZ3w2Yzc1ZmY1ZjYwOWIyNWU0ZTgwMjFlYmRkMTU5ZTgzMGI4ZDNmZTE2NjVjYmRlMmUwMmRiODI2OTExNWM5ZTdk" alt=""> 
+    <h4>INSTA DELIVERY</h4>
+    <p>LESS THAN 3 HRS.</p>
+    </div>
+    <div>
+      <img src="https://www.reliancedigital.in/medias/Best-Finance-Options-2.png?context=bWFzdGVyfGltYWdlc3wxMjM4fGltYWdlL3BuZ3xpbWFnZXMvaDJmL2gxOS85NDQ3MTcwNDA4NDc4LnBuZ3xlMDBiNjY4YWI5YzMzYjZkZDhlZTMyMDhjYjE2YzI2OTY2NWJhYjk2M2VkNzdjZDg3NTNlMGEyMTA1ZjFlODZh" alt="">
+      <h4>BEST FINANCE OPTIONS</h4>
+      <p>WIDE RANGE</p>
+    </div>
+    <div><img src="https://www.reliancedigital.in/medias/service-img.png?context=bWFzdGVyfGltYWdlc3w5MTB8aW1hZ2UvcG5nfGltYWdlcy9oMDYvaGEzLzkwOTA3OTc5OTQwMTQucG5nfGJjZmJhNzM1ODdkYTQ5ODI3YzNiMzQ1ZTdlM2JjNjUwMTBjM2E3YWFjNmUxZjdmMmEyOGRjZDMxOGI4ZWE0MWY" alt="">
+      <h4>SERVICE GUARANTEE</h4>
+      <p>HASSLE FREE</p>
+    </div>
+    <div><img src="https://www.reliancedigital.in/medias/unmatched-network-img.png?context=bWFzdGVyfGltYWdlc3w3NDV8aW1hZ2UvcG5nfGltYWdlcy9oODIvaDJhLzkwOTA3OTgwNTk1NTAucG5nfDFmMThjYzdiYTNiOTgxYjA5YzdlZTFiMmQyODI5MGY2NTM4ZTcxOWZkZTA1ZjAzY2Q1ZTk5YjQ1NTMxMWViYzU" alt="">
+      <h4>UNMATCHED NETWORK</h4>
+      <p>700 CITIES 2000 STORES</p>
+    </div>
+  </div>
+ 
+</div>
+<!--9TH DIV ABOVE-->
 
 
+<!--10TH DIV BELOW-->
+<div id="div10">
+  <h2>SMART WATCHES AT NEVER BEFORE PRICES | <a href="" style="font-size: 16px;text-decoration:none">View All</a></h2>
+  <div>
+    <div id="image">
+      <img src="https://www.reliancedigital.in/medias/Smartwatches-at-NEVER-before-prices.jpg?context=bWFzdGVyfGltYWdlc3w5NjczNHxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaGZiLzk4NjAwNjU5NTE3NzQuanBnfGMwMmUwNTdhMzY1NDBmNjk3ZWJiZmNiMTBkZGRhOGZjNTYxNjgxMTQ4YjllYjhjYjRiZTAxYTU5MWUyMWNiZWE" alt="">
+    </div>
+    <div id="SmartWatches"></div>
+    <button id="leftbtn6"><</button>
+    <button id="rightbtn6">></button>
+  </div>
+ 
+</div>  
+<!--10TH DIV ABOVE-->
 
-
-
-
-
-
+<!--11TH DIV BELOW-->
+<div id="div11">
+  <h2>TOP SELLERS FROM TCL & IFFALCON | <a href="" style="font-size: 16px;text-decoration:none">View All</a></h2>
+  <div>
+    <div id="TCL"></div>
+    <button id="leftbtn7"><</button>
+    <button id="rightbtn7">></button>
+    <div id="image">
+      <img src="https://www.reliancedigital.in/medias/Top-seller-from-TCL-IFFALCON.jpg?context=bWFzdGVyfGltYWdlc3wxNTY1NTl8aW1hZ2UvanBlZ3xpbWFnZXMvaGMyL2hmNS85ODU5NzA0Njg0NTc0LmpwZ3w5ZTg5YzdmNDlkZTAzY2YyZjY1NzY4NzA3MGFjMzJlZTkyNTIyZGJmY2U0NjMxN2E3NWVkODM3NTI0ZDIzYWI1" alt="">
+    </div>
+  </div>
+</div>
+<!--11TH DIV ABOVE-->
+</div>
 
 
 
@@ -355,3 +943,901 @@ text-decoration: underline;
  </div>
 </body>
 </html>
+
+
+<script>
+  let Craus1ImageLink=[
+    "https://www.reliancedigital.in/medias/Samsung-Galaxy-M52-Desktop-20.06.jpg?context=bWFzdGVyfGltYWdlc3wxMDgyNjF8aW1hZ2UvanBlZ3xpbWFnZXMvaDRmL2gwYy85ODYxOTc2NDkwMDE0LmpwZ3w5N2EzMDE4MWQ4ZTI5MmE1NDRkNjRlODJkYWNhNjJkYzQ5YzBiMDdjMThhYjhkOWU2MTAyM2YzZGQxNWIyYzk0",
+    "https://www.reliancedigital.in/medias/Lenovo-Laptops-Desktop-15.07.jpg?context=bWFzdGVyfGltYWdlc3wxMzExODR8aW1hZ2UvanBlZ3xpbWFnZXMvaDY5L2hiMC85ODYyMjA3MDQ1NjYyLmpwZ3w1MmIyMzI0MmY3NzJkYjI2YTI5NTdkZDMwYmUyMmQxZDIyMGY0MWI5OWM2ZTJhNzIxMDgyZjUxY2YyZTdmNzA5","https://www.reliancedigital.in/medias/Samsung-Days-Carousel-Banner-08-06-2022.jpg?context=bWFzdGVyfGltYWdlc3w3NTYyNXxpbWFnZS9qcGVnfGltYWdlcy9oMTMvaGJmLzk4NjAwNjUwOTk4MDYuanBnfGQ2ODBmYWQ3NjdiYTRjM2I3ZWMwY2RjYjEzYmY1ZGY2YzljYmYxMGRmMzA4ZTRmYzE0YmI1Nzk1ZGI0ZWVkOGQ","https://www.reliancedigital.in/medias/OnePlus-TV-CLP-Banner-14-07-2022.jpg?context=bWFzdGVyfGltYWdlc3wxMDY4NTl8aW1hZ2UvanBlZ3xpbWFnZXMvaDBmL2g0OC85ODYyNDU3MjYyMTEwLmpwZ3xiNjUwZjZiNzQ0MWU0MjUzYmNmNmUyMzEzMDM2MzMxNDAzZWI5ZTNlOTQzMzdmYWU5MmRmN2Q2OTBiZTBjYjhi",
+    "https://www.reliancedigital.in/medias/iPhone-12-CLP-Banner-D-13.05.jpg?context=bWFzdGVyfGltYWdlc3w5MjE0MXxpbWFnZS9qcGVnfGltYWdlcy9oYjIvaGM0Lzk4NjE5NzY3NTIxNTguanBnfDdiYmIxOTc2ZmY5NjUzZmRmNGFkNjg4YTExYjViNmU5ZTcyMTRjMjVmOTNiYTBiN2Y4OTljZWE3OTgwZjFlZTM","https://www.reliancedigital.in/medias/Audio-Accessories-Carousel-Banner-08-07-2022.jpg?context=bWFzdGVyfGltYWdlc3w2NjIyMXxpbWFnZS9qcGVnfGltYWdlcy9oNDAvaGRkLzk4NjE0OTk4MTM5MTguanBnfDFjY2I2NTI0NGJhYWM3Yjk0MDgxNWJjZjg1NGVlZjJjYzQ3N2E5M2ZmY2Y4MjdjMGEwNjgyZDU1YjgzYzkwNjI",
+    "https://www.reliancedigital.in/medias/Electronics-Fest-CLP-D-18.07.jpg?context=bWFzdGVyfGltYWdlc3wxMjE2ODB8aW1hZ2UvanBlZ3xpbWFnZXMvaDk3L2hmOS85ODYyNDMxNDA4MTU4LmpwZ3w1Mzk1MzMzMmI3MDg0OTc1ZWFiODkwNTk2ZTEwNDhhZGZhZTBmYWU3MDNhNjNmOGVkNWJkODk2OWFkZTFjNjhm"
+  ]
+let leftbtn1=document.querySelector("#leftbtn1");
+let rightbtn1=document.querySelector("#rightbtn1");
+let imageState=0;
+rightbtn1.addEventListener("click",function(){
+  imageState++;
+  if(imageState==Craus1ImageLink.length){
+    imageState=0;
+  }
+  document.querySelector("#crauser1").src=Craus1ImageLink[imageState];
+})
+leftbtn1.addEventListener("click",function(){
+  imageState--;
+  if(imageState<0){
+    imageState=Craus1ImageLink.length-1;
+  }
+  document.querySelector("#crauser1").src=Craus1ImageLink[imageState];
+})
+
+</script>
+
+
+
+<script>
+let latestlaptops=[{
+  image:"https://www.reliancedigital.in/medias/Acer-15-Aspire3-R3-Laptop-492849812-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MjAwN3xpbWFnZS9qcGVnfGltYWdlcy9oM2MvaDMyLzk4NDEyMjc0OTc1MDIuanBnfDEwNjk4MWE3MTQ5MmY1YjJkMjE1NWYwMTFkNDlhMTViNmNkMmFjOGFjODE5NTEwYzdkZTA2MDJhYWM1MTVjYzI",
+  name:"Acer A315-23 Aspire 3 Laptop AMD Ryzen-3/4 GB/256",
+  price:"29,990.00",
+  strikedprice:"39,999.00",
+  saved:"25%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Acer-A314-35-Laptop-492849921-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNzIxM3xpbWFnZS9qcGVnfGltYWdlcy9oMTcvaGQ5Lzk4MTkzMTc0MDM2NzguanBnfDdiZDg3ZTA1NjE0MTE1NzFjNGU3NDE3OTMyYzc0NzljMzRiM2RjNjE5OGFhN2U1YWVhNjQ3YmI5YTMwM2JhNjI",
+  name:"Acer A314-35 Aspire 3 Laptop AMD Ryzen-3/4 GB/256",
+  price:"29,999.00",
+  strikedprice:"42,999.00",
+  saved:"37%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/HP-14s-dq3032tu-Laptops-492849723-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1Mjk3N3xpbWFnZS9qcGVnfGltYWdlcy9oNmQvaDY4Lzk4MDcxMDAwNTE0ODYuanBnfDk1ZTliOGMwYjUzMDExODFkZDRkZDQyYmZmZWM4M2I1OGExN2E2MGIyMDkwM2NlZTdmYzA3NWM0NzAwY2YzMmE",
+  name:"HP 14s-dq303tu Thin and Light Laptop Intel Celeron",
+  price:"31,990.00",
+  strikedprice:"37,006.00",
+  saved:"14%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/HP-533U4PAACJ-Laptop-492849312-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMzM2MnxpbWFnZS9qcGVnfGltYWdlcy9oY2UvaGNkLzk4MjQ0MzU0NzAzNjYuanBnfDc0YTRhMTY0NzNlMjQ5YzY2MDg3ZmU2YjQyNmNhNzU0ODQ5ZjkyOGE1N2RjMDBhZTM4YTM5ZjQ4ZTlhMmM0NTE",
+  name:"HP 15s-gk354 11-Gen-Intel-Core-I5",
+  price:"55,990.00",
+  strikedprice:"65,444.00",
+  saved:"14%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Lenovo-8JIN-Laptops-492850142-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMDYyNHxpbWFnZS9qcGVnfGltYWdlcy9oZWYvaGE0Lzk4NDk0MDkwMTE3NDIuanBnfDE4ZGNiN2ZkMzM4YWU3Yjc2YTJmZjRmNjk4OWY1N2YzY2I1NDAxOGM1ZDU5YTIxNDAzNjVhZGEzNGEyOGZmZDc",
+  name:"Lenovo 8J In IdeaPad Slim 3 Laptop",
+  price:"31,490.00",
+  strikedprice:"53,790.00",
+  saved:"41%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Lenovo-41IN-Laptops-492850143-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2NzU3MXxpbWFnZS9qcGVnfGltYWdlcy9oNzQvaGVkLzk4NDkyMzgzMjMyMzAuanBnfDA0NWNmNjdiOWE2ZjAyMDBhZjNjNWVhNThjNmJlYmE3MDc1NTc4MWU1MGJjZjgzYTNlYzBjYWVlOGI5NTZmY2Y",
+  name:"Lenovo 41 In IdeaPad Slim 3 Laptop 8th GEN",
+  price:"31,490.00",
+  strikedprice:"53,790.00",
+  saved:"41%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Lenovo-81WH007KIN-LAPTOP-492849666-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMDg2MnxpbWFnZS9qcGVnfGltYWdlcy9oNWIvaGI0Lzk4NDkyMzg2NTA5MTAuanBnfDY1ZTdjNmUxYzdiMDczOThhZDMzYjBlZGE1MmZlYTE5ZDZhOGNhZGEzYTU2NDk5YWQ5ODgxMTY4NjA3OTI4ZDE",
+  name:"Lenovo 53 In IdeaPad Slim 3 Laptop 11th GEN Intel Celeron",
+  price:"27,999.00",
+  strikedprice:"40,490.00",
+  saved:"31%"
+}
+]
+let container=document.getElementById("LatestLaptops");
+display(latestlaptops);
+function display(latestlaptops){
+for(i=0;i<latestlaptops.length-2;i++){
+  let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=latestlaptops[i].image;
+let a=document.createElement("a");
+a.setAttribute("href","");
+let h4=document.createElement("h4");
+h4.innerText=latestlaptops[i].name;
+a.append(h4);
+let span=document.createElement("span");
+span.innerText=latestlaptops[i].price;
+let p1=document.createElement("p");
+p1.innerText="Offer Price: INR "
+p1.append(span);
+let span2=document.createElement("span");
+span2.innerText=latestlaptops[i].strikedprice;
+let p2=document.createElement("p");
+p2.innerText="M.R.P: INR "
+p2.append(span2);
+let s=document.createElement("s");
+s.append(p2);
+let span3=document.createElement("span");
+span3.innerText=latestlaptops[i].saved;
+let p3=document.createElement("p");
+p3.innerText="You Save: ";
+p3.append(span3);
+product.append(img,a,p1,s,p3);
+container.append(product);
+}
+
+}
+
+let leftbtn2=document.getElementById("leftbtn2");
+  let rightbtn2=document.getElementById("rightbtn2");
+  let divstate=1;
+  let N=latestlaptops.length;
+  rightbtn2.addEventListener("click",function(){
+    divstate++;
+    if(divstate>2){
+      divstate=0;
+      N=latestlaptops.length-2;
+    }
+    if(divstate==1){
+      divstate=2;
+      N=latestlaptops.length
+    }
+    container.innerHTML="";
+    console.log(divstate)
+    for(i=divstate;i<N;i++){
+  let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=latestlaptops[i].image;
+let a=document.createElement("a");
+a.setAttribute("href","");
+let h4=document.createElement("h4");
+h4.innerText=latestlaptops[i].name;
+a.append(h4);
+let span=document.createElement("span");
+span.innerText=latestlaptops[i].price;
+let p1=document.createElement("p");
+p1.innerText="Offer Price: INR "
+p1.append(span);
+let span2=document.createElement("span");
+span2.innerText=latestlaptops[i].strikedprice;
+let p2=document.createElement("p");
+p2.innerText="M.R.P: INR "
+p2.append(span2);
+let s=document.createElement("s");
+s.append(p2);
+let span3=document.createElement("span");
+span3.innerText=latestlaptops[i].saved;
+let p3=document.createElement("p");
+p3.innerText="You Save: ";
+p3.append(span3);
+product.append(img,a,p1,s,p3);
+container.append(product);
+}
+
+  })
+leftbtn2.addEventListener("click",function(){
+  divstate++;
+    if(divstate>2){
+      divstate=0;
+      N=latestlaptops.length-2;
+    }
+    if(divstate==1){
+      divstate=2;
+      N=latestlaptops.length
+    }
+    container.innerHTML="";
+    console.log(divstate)
+    for(i=divstate;i<N;i++){
+  let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=latestlaptops[i].image;
+let a=document.createElement("a");
+a.setAttribute("href","");
+let h4=document.createElement("h4");
+h4.innerText=latestlaptops[i].name;
+a.append(h4);
+let span=document.createElement("span");
+span.innerText=latestlaptops[i].price;
+let p1=document.createElement("p");
+p1.innerText="Offer Price: INR "
+p1.append(span);
+let span2=document.createElement("span");
+span2.innerText=latestlaptops[i].strikedprice;
+let p2=document.createElement("p");
+p2.innerText="M.R.P: INR "
+p2.append(span2);
+let s=document.createElement("s");
+s.append(p2);
+let span3=document.createElement("span");
+span3.innerText=latestlaptops[i].saved;
+let p3=document.createElement("p");
+p3.innerText="You Save: ";
+p3.append(span3);
+product.append(img,a,p1,s,p3);
+container.append(product);
+}
+
+})
+</script>
+
+
+<script>
+  let smallappliances=[{
+  image:"https://www.reliancedigital.in/medias/MISFIT-T30-Trimmer-492910929-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MjIxfGltYWdlL2pwZWd8aW1hZ2VzL2g4OS9oNDMvOTgxNzQwMTEzMTAzOC5qcGd8MzQ4ZjBiZmQwNzA0YTUxOTQ0OWZlYWQ5ZmFiZWMwZTI4YzYwMTEwMDRmY2FlNmY1ZTc0NTE4MjFjZjRkMzNkNg",
+  name:"MisFit by Boat T30 RTL Men's Trimmer",
+  price:"499.00",
+  strikedprice:"1,499.00",
+  saved:"67%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Prestige-PKOSS-Electric-Kettles-491373220-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMjQ0OHxpbWFnZS9qcGVnfGltYWdlcy9oMDUvaDA4LzkyOTM4MDU5NDQ4NjIuanBnfDM2YTI4NmExMjEzZjkxZGRlYjRhNzEwNjc1OWQ0ZTM3OTkwYzRiYmM5NWRiMTdjMDVlZGI0MjdlZGRlZTg0ZTM",
+  name:"Prestige 1.5L 1500 Watts Electric Kettle, PKOSS",
+  price:"799.00",
+  strikedprice:"1,145.00",
+  saved:"30%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Pigeon-Zest-Juicer-Mixer-Grinder-492664336-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MzY3OHxpbWFnZS9qcGVnfGltYWdlcy9oZTQvaGQ4Lzk3NTUxODg5MjAzNTAuanBnfGY4MDVmYTkwMmIxOGU0MGE3NGM2NjVkODhhZWY5ZGFkZGZkMTk5YzE5NzI0YWUyZjYwMjI5YzAyODI2ZjQ4NjA",
+  name:"Pigeon Zest 750 Watt Mixer Grinder with 3 Jars,Turquoise",
+  price:"2,299.00",
+  strikedprice:"4,295.00",
+  saved:"46%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Lifelong-LLDI09-Irons-492664307-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMzA3M3xpbWFnZS9qcGVnfGltYWdlcy9oODkvaDIxLzk4NTM2Nzg1ODM4MzguanBnfDc2NjcxZTI5NjFkMTBiM2EyNDhiZGRmMzkwZDQyMzA0NzI3ZTU4MmEyYTRiODdjODZiN2Q5MmQyZmU1NjAzZGM",
+  name:"LifeLong LLDI09 1100 Watts Dry Iron Blue and White",
+  price:"399.00",
+  strikedprice:"899.00",
+  saved:"56%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/PIGEON-Mini-Eco-Speciality-Appliances-492664295-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMTgwMnxpbWFnZS9qcGVnfGltYWdlcy9oODYvaDY1Lzk3NTQyMjcyNzc4NTQuanBnfDU4NzljN2IzOWI4YWM2NWVjOTc4ZjNlM2NmYjVhNjc5NGM2NTRmZWY2NmJjMmFjNmY2OTVkYWUwZmRjNzgwN2E",
+  name:"Pigeon Mini Eco Handy Chopper",
+  price:"199.00",
+  strikedprice:"445.00",
+  saved:"55%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/EUREKA-GWPDMRUMM00000-Water-Purifier-492911044-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMjE3N3xpbWFnZS9qcGVnfGltYWdlcy9oODAvaDdhLzk4MzUxODgzODc4NzAuanBnfGFmNzJjMmZlOWM1MGM2Y2QzYzhmNTE3ZDFlMTc4YTg2YjJkYzk1ZGIwNDU5ZTk3NDAyYzk5ZDAzODI3M2QwMzQ",
+  name:"Eureka Forbes Maxima 7 Litres RO + UV Water purifier",
+  price:"9,799.00",
+  strikedprice:"14,000.00",
+  saved:"30%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Candes-Magic-Fan-492664642-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxODEzNnxpbWFnZS9qcGVnfGltYWdlcy9oNDQvaDM5Lzk4MTYzNTAwNjQ2NzAuanBnfGExNjU2YzdhODgwMDlhYWNkMWY2ZTE0OGYzNThlYTljOTcxNmRhNDFjNWRlZGIxNTY5ODhiZGJkMWIxYWMxMzM",
+  name:"Candes Magic 1200mm Anti Dust Ceiling Fan, Brown",
+  price:"1,199.00",
+  strikedprice:"1,899.00",
+  saved:"37%"
+}
+]
+let container2=document.getElementById("SmallAppliances");
+display(smallappliances);
+function display(smallappliances){
+for(i=0;i<smallappliances.length-2;i++){
+  let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=smallappliances[i].image;
+let a=document.createElement("a");
+a.setAttribute("href","");
+let h4=document.createElement("h4");
+h4.innerText=smallappliances[i].name;
+a.append(h4);
+let span=document.createElement("span");
+span.innerText=smallappliances[i].price;
+let p1=document.createElement("p");
+p1.innerText="Offer Price: INR "
+p1.append(span);
+let span2=document.createElement("span");
+span2.innerText=smallappliances[i].strikedprice;
+let p2=document.createElement("p");
+p2.innerText="M.R.P: INR "
+p2.append(span2);
+let s=document.createElement("s");
+s.append(p2);
+let span3=document.createElement("span");
+span3.innerText=smallappliances[i].saved;
+let p3=document.createElement("p");
+p3.innerText="You Save: ";
+p3.append(span3);
+product.append(img,a,p1,s,p3);
+container2.append(product);
+}
+
+}
+
+let leftbtn3=document.getElementById("leftbtn3");
+  let rightbtn3=document.getElementById("rightbtn3");
+  let divstate2=1;
+  let N1=latestlaptops.length;
+  rightbtn3.addEventListener("click",function(){
+    divstate2++;
+    if(divstate2>2){
+      divstate2=0;
+      N1=smallappliances.length-2;
+    }
+    if(divstate2==1){
+      divstate2=2;
+      N1=smallappliances.length
+    }
+    container2.innerHTML="";
+    
+    for(i=divstate2;i<N1;i++){
+      let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=smallappliances[i].image;
+let a=document.createElement("a");
+a.setAttribute("href","");
+let h4=document.createElement("h4");
+h4.innerText=smallappliances[i].name;
+a.append(h4);
+let span=document.createElement("span");
+span.innerText=smallappliances[i].price;
+let p1=document.createElement("p");
+p1.innerText="Offer Price: INR "
+p1.append(span);
+let span2=document.createElement("span");
+span2.innerText=smallappliances[i].strikedprice;
+let p2=document.createElement("p");
+p2.innerText="M.R.P: INR "
+p2.append(span2);
+let s=document.createElement("s");
+s.append(p2);
+let span3=document.createElement("span");
+span3.innerText=smallappliances[i].saved;
+let p3=document.createElement("p");
+p3.innerText="You Save: ";
+p3.append(span3);
+product.append(img,a,p1,s,p3);
+container2.append(product);
+}
+
+  })
+leftbtn3.addEventListener("click",function(){
+  divstate2++;
+    if(divstate2>2){
+      divstate2=0;
+      N1=smallappliances.length-2;
+    }
+    if(divstate2==1){
+      divstate2=2;
+      N1=smallappliances.length
+    }
+    container2.innerHTML="";
+   
+    for(i=divstate2;i<N1;i++){
+      let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=smallappliances[i].image;
+let a=document.createElement("a");
+a.setAttribute("href","");
+let h4=document.createElement("h4");
+h4.innerText=smallappliances[i].name;
+a.append(h4);
+let span=document.createElement("span");
+span.innerText=smallappliances[i].price;
+let p1=document.createElement("p");
+p1.innerText="Offer Price: INR "
+p1.append(span);
+let span2=document.createElement("span");
+span2.innerText=smallappliances[i].strikedprice;
+let p2=document.createElement("p");
+p2.innerText="M.R.P: INR "
+p2.append(span2);
+let s=document.createElement("s");
+s.append(p2);
+let span3=document.createElement("span");
+span3.innerText=smallappliances[i].saved;
+let p3=document.createElement("p");
+p3.innerText="You Save: ";
+p3.append(span3);
+product.append(img,a,p1,s,p3);
+container2.append(product);
+}
+
+})
+</script>
+
+
+<script>
+  let Craus2ImageLink=[
+    "https://www.reliancedigital.in/medias/Oppo-Reno-8PRO-NPI-D-18.04.jpg?context=bWFzdGVyfGltYWdlc3wxMjI0MjJ8aW1hZ2UvanBlZ3xpbWFnZXMvaDM2L2g3My85ODYyNDM3NTY4NTQyLmpwZ3xkZmM1MDIxODRlYTc4MjRjMzhiODBhNmY5ZjdlYmVlMjdhOWNkMjYxMmU4Y2U2Yjk2YjA4OWNhMWRmYjMxYTFi",
+    "https://www.reliancedigital.in/medias/OnePlus-Nord-2T-5G-NPI-Banner-13-07-2022.jpg?context=bWFzdGVyfGltYWdlc3w4NjI4MHxpbWFnZS9qcGVnfGltYWdlcy9oMjgvaGY3Lzk4NjAwNjcwNjU4ODYuanBnfGEzZDhiNmRmYjBiYzg1YzFjOGI5MmFkMGJlZjYzMTAyY2FkNzNkMzIwNTdkYWM2ZTA0YzlkNzFjOTZiN2E1NDA","https://www.reliancedigital.in/medias/Samsung-Smart-HD-TV-NPI-D-11.07.jpg?context=bWFzdGVyfGltYWdlc3wxMzk4NDN8aW1hZ2UvanBlZ3xpbWFnZXMvaGM0L2gwOC85ODYyNDU3NjU1MzI2LmpwZ3wxZjgxYTE3OTBjMjE4Zjg1YzEwZGU1ZjkzYzFkYjc2Yjg4YjQzNjkxNjQyNzQyMTkxNmIwMTA2MDcxNDk2YWNh","https://www.reliancedigital.in/medias/Ignitr-Lyt-1365-X-260-NPI-CLP-D.jpg?context=bWFzdGVyfGltYWdlc3wxMDExMzJ8aW1hZ2UvanBlZ3xpbWFnZXMvaDNjL2hiZS85ODYzNDE3NzU3NzI2LmpwZ3w5NWE4NTEzZDgxNjVjNmFiOWNhMWI4N2RiYTE0ZDc2MzVkZDA0ODkyOWI0YzE0OWJiZGU5MDg5ZGU2MGQzOTIx",
+    "https://www.reliancedigital.in/medias/Fire-Boltt-Ninja-Dial-NPI-CLP-D.jpg?context=bWFzdGVyfGltYWdlc3wxMDAxOTh8aW1hZ2UvanBlZ3xpbWFnZXMvaDUzL2g1Mi85ODYwNjY3ODAxNjMwLmpwZ3wyY2UxNjU1ZDQ1N2NjOTc4MmNhZjE2NTk1YTAwNDIwMjFjYjA2MzNhOGUxY2Y1YmYyMWI1NmZjZmQ0ZjNjNGNk","https://www.reliancedigital.in/medias/Sony-Bluetooth-WI-C100-D-NPI-1-.jpg?context=bWFzdGVyfGltYWdlc3wxMjE1NDF8aW1hZ2UvanBlZ3xpbWFnZXMvaDQ0L2g4My85ODYyNDMwODUxMTAyLmpwZ3xlZmRjZTEzZWI3YWYwMTlhNWY2YmVhMjMyNDJhZWEzYmZlMDFjMzRjYjI3YTE0Y2NkYThkZmE1MjZlODYzMDI5"
+  ]
+let leftbtn4=document.querySelector("#leftbtn4");
+let rightbtn4=document.querySelector("#rightbtn4");
+let imageState2=0;
+rightbtn4.addEventListener("click",function(){
+  imageState2++;
+  if(imageState2==Craus2ImageLink.length){
+    imageState2=0;
+  }
+  document.querySelector("#crauser2").src=Craus2ImageLink[imageState2];
+})
+leftbtn4.addEventListener("click",function(){
+  imageState2--;
+  if(imageState2<0){
+    imageState2=Craus2ImageLink.length-1;
+  }
+  document.querySelector("#crauser2").src=Craus2ImageLink[imageState2];
+})
+
+</script>
+
+
+<script>
+  let range=[{
+  image:"https://www.reliancedigital.in/medias/iphone-pro-11-01.png?context=bWFzdGVyfGltYWdlc3wyOTc3NnxpbWFnZS9wbmd8aW1hZ2VzL2gxNi9oNWUvOTI3NjA1OTkxMDE3NC5wbmd8MzdkYzljODgzMDcyM2ZjMjJmZDI2ZjMwNjhkZmU5YjFmOTJmMGRmOTFiYzc4ZjcyMDRhMjQ5MWMyNjYwOTgxYg",
+  name:"Smartphones"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Laptop-180x180-15-01-2019.png?context=bWFzdGVyfGltYWdlc3wyOTAwOXxpbWFnZS9wbmd8aW1hZ2VzL2g0Mi9oNTYvOTI1MTA1MDYxODkxMC5wbmd8N2ZjYTg0ZDAyOTZmMmQ5OTZhZDNiM2M4NDg0ZDgxY2UyNzNjMmJiYzMwZTZiOGQwOWE5N2JlZDI4M2ViMGZjNw",
+  name:"Laptops",
+ 
+},
+{
+  image:"https://www.reliancedigital.in/medias/TV-180x180-15-01-2019.png?context=bWFzdGVyfGltYWdlc3w0OTM4M3xpbWFnZS9wbmd8aW1hZ2VzL2g1ZC9oMTEvOTI1MTA1MDU1MzM3NC5wbmd8MThiNmU4NTZiNWI5MTE1ZGVjYjA4ZjIwM2QwZjUyMzFlOGExZTY0YmQ0MTRkYTkyN2M2MDZiYzUzZDY1ZjM4Ng",
+  name:"Televisions",
+ 
+},
+{
+  image:"https://www.reliancedigital.in/medias/Watch-180x180-27-02-2020.png?context=bWFzdGVyfGltYWdlc3w2Njk2fGltYWdlL3BuZ3xpbWFnZXMvaGQ1L2g2My85MjUzNTA3NTk2MzE4LnBuZ3w4NmEwODU5NDI5YzVlMzJjNzRlNzNlYmJkMmJmYTZjMTI2OWY0YTUxYWU3YzMzM2E3YTc5YjljZmU4ZGMyNGQ2",
+  name:"Smart Wearables",
+ 
+},
+{
+  image:"https://www.reliancedigital.in/medias/Washing-Machine-180x180-15-01-2019.png?context=bWFzdGVyfGltYWdlc3wzNDU4MXxpbWFnZS9wbmd8aW1hZ2VzL2gzOC9oM2UvOTI1MTA1MDg4MTA1NC5wbmd8ZDAyZGNkMzU1MzE3N2E2OGFlOTliMzUyODZkYzlkNTc0NzFmODllY2JiZDVlNzdhYjg3MTgyMTc4ZGVhODA3ZA",
+  name:"Washing Machines",
+ 
+},
+{
+  image:"https://www.reliancedigital.in/medias/Speaker-Headset-180x180-15-01-2019.png?context=bWFzdGVyfGltYWdlc3wyNzUzN3xpbWFnZS9wbmd8aW1hZ2VzL2g1YS9oODAvOTI1MTA1MDY4NDQ0Ni5wbmd8YmMyYWJiNzRhMzk4NjMxMDRmOWRlZGI1MzVjZDk2Y2IxYTkxOGNlNjlmZjA2YTgwMGIwMjhmYTJlYmNhYjIwOA",
+  name:"Speakers and Headsets",
+
+},
+{
+  image:"https://www.reliancedigital.in/medias/Camera-180x180-15-01-2019.png?context=bWFzdGVyfGltYWdlc3w0MzE0OHxpbWFnZS9wbmd8aW1hZ2VzL2gzNi9oMGMvOTI1MTA1MDc0OTk4Mi5wbmd8NDMxMGMyNjg2M2I3ZDFhOTc4YjkzMTNhYWM1ZmU5YzRlMjc3Mzg4MDcxOTU1OGE0NzZjODczZWU3NTdhMTM0MA",
+  name:"Cameras",
+
+}
+]
+let container3=document.getElementById("Range");
+display(range);
+function display(range){
+for(i=0;i<range.length-2;i++){
+  let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=range[i].image;
+let a=document.createElement("a");
+a.setAttribute("href","");
+let h4=document.createElement("h4");
+h4.innerText=range[i].name;
+a.append(h4);
+
+product.append(img,a);
+container3.append(product);
+}
+
+}
+
+let leftbtn5=document.getElementById("leftbtn5");
+  let rightbtn5=document.getElementById("rightbtn5");
+  let divstate3=1;
+  let N2=range.length;
+  rightbtn5.addEventListener("click",function(){
+    divstate3++;
+    if(divstate3>2){
+      divstate3=0;
+      N2=range.length-2;
+    }
+    if(divstate3==1){
+      divstate3=2;
+      N2=range.length
+    }
+    container3.innerHTML="";
+
+    for(i=divstate3;i<N2;i++){
+  let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=range[i].image;
+let a=document.createElement("a");
+a.setAttribute("href","");
+let h4=document.createElement("h4");
+h4.innerText=range[i].name;
+a.append(h4);
+product.append(img,a);
+container3.append(product);
+}
+
+  })
+leftbtn5.addEventListener("click",function(){
+  divstate3++;
+    if(divstate3>2){
+      divstate3=0;
+      N2=range.length-2;
+    }
+    if(divstate3==1){
+      divstate3=2;
+      N2=range.length
+    }
+    container3.innerHTML="";
+    
+    for(i=divstate3;i<N2;i++){
+  let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=range[i].image;
+let a=document.createElement("a");
+a.setAttribute("href","");
+let h4=document.createElement("h4");
+h4.innerText=range[i].name;
+a.append(h4);
+product.append(img,a);
+container3.append(product);
+}
+
+})
+</script>
+
+
+<script>
+  let smartwatches=[{
+  image:"https://www.reliancedigital.in/medias/Hammer-PULSE-3-0-Smart-Watch-492849894-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNjcyMXxpbWFnZS9qcGVnfGltYWdlcy9oMDcvaGU1Lzk4MTQ3MTk5MjIyMDYuanBnfDU4NmIxM2U0OWY3NGRmYjI3ZTA0NDQwN2EzN2ZmMDgwYjllYTQ4ZjU5OGU4MmUwYzVlNDhmN2I0OGNiZTgzYWU",
+  name:"Hammer Plus 3.0 Bluetooth Calling Smartwatch",
+  price:"1,999.00",
+  strikedprice:"9,999.00",
+  saved:"80%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Fire-Boltt-BSW020-Sports-Fitness-Watches-492575002-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w4OTY4MnxpbWFnZS9qcGVnfGltYWdlcy9oM2MvaGEzLzk4NTgwODY0Njk2NjIuanBnfGI5YzY2YWUxMTY1NDE1NTA1YmZkMWNmYWY3ZDE3MmM2NTE0MWE3MmI0YWZlZTk3ZTE0ZDlmZDc1N2RmMGM0ZWU",
+  name:"Fire Boltt BSW020 Invincible Smart Watch with Bluetooth",
+  price:"5,999.00",
+  strikedprice:"15,999.00",
+  saved:"63%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Fire-Boltt-Smartwatch-BSW001-Black-491996737-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMjQ4OHxpbWFnZS9qcGVnfGltYWdlcy9oMzkvaGU2Lzk1NjY5ODUwMjc2MTQuanBnfGI1ZDdlNzNkOWQ2NzBkNDBkMzllNTk2ZDE5OWMyYzhlNjc4NWEwMTU1MmNlMmYxOTZlNDQ2ZGRhOTI3NjY2ZjU",
+  name:"Fire Boltt BSW001 Smart Watch with SPO2 Heart Rate",
+  price:"1,799.00",
+  strikedprice:"5,999.00",
+  saved:"70%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Fire-Boltt-Ninja-Smartwatch-492403641-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNDgzOXxpbWFnZS9qcGVnfGltYWdlcy9oY2YvaDJhLzk4NTIzMTc1MzIxOTAuanBnfDlmZWQyYjMyZGJmMDMwOTI1YWI1YTI4OWQyOTI4NDM3NTgyYmJjNTFmZTE4NDE4YjgyMjg0NjJmOTBkYTZhZTQ",
+  name:"Fire Boltt Ninja Dial Smartwatch, Navy Blue",
+  price:"3,999.00",
+  strikedprice:"9,999.00",
+  saved:"69%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Noise-Colorfit-Grande-Smart-Watch-492850519-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNTkwOHxpbWFnZS9qcGVnfGltYWdlcy9oMWMvaGVkLzk4NDMyNjM5OTU5MzQuanBnfGFlZDk2NDFlN2NlN2YyZGFlZjAzZmUyOWJmZjNlNzBjMTZkY2JhMDQ1ZjY4ZTc3MjFjYWY5NTYyNTQxNzA2MDI",
+  name:"Noise Color Fit Grande Smart Watch",
+  price:"2,099.00",
+  strikedprice:"4,999.00",
+  saved:"58%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/boAt-Watch-Flash-RTL-Smart-Watches-492574195-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MDAwN3xpbWFnZS9qcGVnfGltYWdlcy9oNDMvaDA3Lzk3NTU3Nzg1NDc3NDIuanBnfDQxZGE4MzYwMzI2NjZiZjJkYWQyM2VmOGNiZTc5OWE0YmU0NTM3ODk3ZjgwMGZlYmNjMThhMTRjZmM5NDMyN2Y",
+  name:"Boat Wave Fit Smart Watch With Bluetooth",
+  price:"2,499.00",
+  strikedprice:"6,990.00",
+  saved:"64%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Fire-Boltt-Ninja-Pro-Max-Smart-Watch-492574963-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1NjU2OXxpbWFnZS9qcGVnfGltYWdlcy9oNGEvaGNhLzk4MTc1MTIwMTc5NTAuanBnfDQxYTcxZTQyYjQxNzYwOGFkOTkxN2EyMDM3NTg1OTg5MWZmMDMzY2UwN2M2YTY5OTkwMzBiZTBhNTVjYjIyM2I",
+  name:"Free Boltt Ninja Pro Max SmartWatch, Black",
+  price:"1,999.00",
+  strikedprice:"5,999.00",
+  saved:"67%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Apple-MTF32HN-A-Smart-Watches-491488097-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w4NTU5fGltYWdlL2pwZWd8aW1hZ2VzL2hkZC9oZjUvOTE5NjU4MTEyNjE3NC5qcGd8OTU3MjZmNzM3YWFmOTEyYmY4Zjk5ZDg2NWFkZDA0NzBmMzNiODlmMjI4OWJkZjBjMTI0YTBmNDlkNmY5OTdlNg",
+  name:"Apple Watch Series 3 GPS - 42 mm Space Grey Aluminium",
+  price:"20,999.00",
+  strikedprice:"31,900.00",
+  saved:"34%"
+}
+]
+let container4=document.getElementById("SmartWatches");
+display(smartwatches);
+function display(smartwatches){
+for(i=0;i<smartwatches.length-4;i++){
+  let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=smartwatches[i].image;
+let a=document.createElement("a");
+a.setAttribute("href","");
+let h4=document.createElement("h4");
+h4.innerText=smartwatches[i].name;
+a.append(h4);
+let span=document.createElement("span");
+span.innerText=smartwatches[i].price;
+let p1=document.createElement("p");
+p1.innerText="Offer Price: INR "
+p1.append(span);
+let span2=document.createElement("span");
+span2.innerText=smartwatches[i].strikedprice;
+let p2=document.createElement("p");
+p2.innerText="M.R.P: INR "
+p2.append(span2);
+let s=document.createElement("s");
+s.append(p2);
+let span3=document.createElement("span");
+span3.innerText=smartwatches[i].saved;
+let p3=document.createElement("p");
+p3.innerText="You Save: ";
+p3.append(span3);
+product.append(img,a,p1,s,p3);
+container4.append(product);
+}
+
+}
+
+let leftbtn6=document.getElementById("leftbtn6");
+  let rightbtn6=document.getElementById("rightbtn6");
+  let divstate4=3;
+  let N3=smartwatches.length;
+  rightbtn6.addEventListener("click",function(){
+    divstate4++;
+    if(divstate4>4){
+      divstate4=0;
+      N3=smartwatches.length-4;
+    }
+    if(divstate4==1){
+      divstate4=4;
+      N3=smartwatches.length
+    }
+    container4.innerHTML="";
+   
+    for(i=divstate4;i<N3;i++){
+  let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=smartwatches[i].image;
+let a=document.createElement("a");
+a.setAttribute("href","");
+let h4=document.createElement("h4");
+h4.innerText=smartwatches[i].name;
+a.append(h4);
+let span=document.createElement("span");
+span.innerText=smartwatches[i].price;
+let p1=document.createElement("p");
+p1.innerText="Offer Price: INR "
+p1.append(span);
+let span2=document.createElement("span");
+span2.innerText=smartwatches[i].strikedprice;
+let p2=document.createElement("p");
+p2.innerText="M.R.P: INR "
+p2.append(span2);
+let s=document.createElement("s");
+s.append(p2);
+let span3=document.createElement("span");
+span3.innerText=smartwatches[i].saved;
+let p3=document.createElement("p");
+p3.innerText="You Save: ";
+p3.append(span3);
+product.append(img,a,p1,s,p3);
+container4.append(product);
+}
+
+  })
+leftbtn6.addEventListener("click",function(){
+  divstate4++;
+    if(divstate4>4){
+      divstate4=0;
+      N3=smartwatches.length-4;
+    }
+    if(divstate4==1){
+      divstate4=4;
+      N3=smartwatches.length
+    }
+    container4.innerHTML="";
+   
+    for(i=divstate4;i<N3;i++){
+  let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=smartwatches[i].image;
+let a=document.createElement("a");
+a.setAttribute("href","");
+let h4=document.createElement("h4");
+h4.innerText=smartwatches[i].name;
+a.append(h4);
+let span=document.createElement("span");
+span.innerText=smartwatches[i].price;
+let p1=document.createElement("p");
+p1.innerText="Offer Price: INR "
+p1.append(span);
+let span2=document.createElement("span");
+span2.innerText=smartwatches[i].strikedprice;
+let p2=document.createElement("p");
+p2.innerText="M.R.P: INR "
+p2.append(span2);
+let s=document.createElement("s");
+s.append(p2);
+let span3=document.createElement("span");
+span3.innerText=smartwatches[i].saved;
+let p3=document.createElement("p");
+p3.innerText="You Save: ";
+p3.append(span3);
+product.append(img,a,p1,s,p3);
+container4.append(product);
+}
+})
+</script>
+
+<script>
+  let tcl=[{
+  image:"https://www.reliancedigital.in/medias/TCL-D311T-LED-492572945-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyODgwN3xpbWFnZS9qcGVnfGltYWdlcy9oMWEvaGE3Lzk4MzE2NzY5MzYyMjIuanBnfGE5M2ZlNmIyNDdkY2EwODAyMDIzYmJhN2E5NzU3MmRlZmUxNGMwYmFkNzA2M2RkYWE3NmNjYWJmMmNhMzE4MjM",
+  name:"Hammer Plus 3.0 Bluetooth Calling TV",
+  price:"51,999.00",
+  strikedprice:"59,999.00",
+  saved:"80%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/IFFALCON-43F2A-Television-492338468-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MTMwNXxpbWFnZS9qcGVnfGltYWdlcy9oOWIvaDg5Lzk1ODA4NzU2Nzc3MjYuanBnfDk3ZmIwN2RjZTUxNTA1YTBmMzk5MWY4YjA3OGJmYjJkNGQ3MDFjNmJhNjU1Yjk5MWRhZTNmNTI3ZTE0ZmExNTc",
+  name:"Fire Boltt BSW020 Invincible Smart TV ",
+  price:"59,999.00",
+  strikedprice:"75,999.00",
+  saved:"63%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/TCL-32S5201-Smart-TV-492403797-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNTU3MHxpbWFnZS9qcGVnfGltYWdlcy9oNjQvaDZmLzk4MzU0MDkzNDI0OTQuanBnfGViMTUxYmE0YmU4YzUyODU5MzM2ZTY2NjhjZjc1YTBhNGI5OWQ0OWNiYjg0OTkyYTlhMmI0ZGQyZDkxOWQwN2I",
+  name:"Fire Boltt BSW001 Smart TV with SPO2 Heart Rate",
+  price:"81,799.00",
+  strikedprice:"85,999.00",
+  saved:"70%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/IFFALCON-43U61-Television-492579406-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMDk0OTd8aW1hZ2UvanBlZ3xpbWFnZXMvaGE2L2g5OS85NzQ1OTQwODczMjQ2LmpwZ3w4NmYzNzdiNDc1ZGJhMTczYzM3ZjdhZDI0ODUxZjU2ZjNmNjZhOTJhMzg1ZWFiYWMwNmY3NDVkMmY0ZThlOWQ4",
+  name:"IFALCON X MODEL ANDROID TV",
+  price:"38,999.00",
+  strikedprice:"49,999.00",
+  saved:"69%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/IFFALCON-43U61-Television-492579406-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMDk0OTd8aW1hZ2UvanBlZ3xpbWFnZXMvaGE2L2g5OS85NzQ1OTQwODczMjQ2LmpwZ3w4NmYzNzdiNDc1ZGJhMTczYzM3ZjdhZDI0ODUxZjU2ZjNmNjZhOTJhMzg1ZWFiYWMwNmY3NDVkMmY0ZThlOWQ4",
+  name:"Noise Color Fit TCL Smart TV",
+  price:"26,099.00",
+  strikedprice:"34,999.00",
+  saved:"58%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/TCL-32S65A-Television-491936168-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNzI4OHxpbWFnZS9qcGVnfGltYWdlcy9oNzcvaDUxLzk4MzI3MTE0MjE5ODIuanBnfDA0YmJjYmNlNTdkZDYyMTA3MGU3NmNmZDhlZjM5OGQ1ZjgwZjIzMDhkNGNhOTE3MDZhNjhlNDllOGE3NGZhNWM",
+  name:"IFALCON Wave Fit Smart TV",
+  price:"20,499.00",
+  strikedprice:"26,990.00",
+  saved:"64%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/IFFALCON-32F52-Televisions-492403800-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0OTU5OXxpbWFnZS9qcGVnfGltYWdlcy9oODcvaDc0Lzk3MjcxMzgxMzYwOTQuanBnfDM1N2Q4MTYxMTcyZWMwZjIyM2EzMWJkNTA0OGE5YTQ4OGM2MTlkMDFhYzQyYzRkM2E3MDFlYzQ3MWJhYWQ0YjM",
+  name:"TCL 45 INCH Z-MODEL SMART TV",
+  price:"60,999.00",
+  strikedprice:"75,999.00",
+  saved:"67%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/TCL-55P615-Televisions-491934672-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTE2OXxpbWFnZS9qcGVnfGltYWdlcy9oMTgvaGE0Lzk4MzI3MTEwOTQzMDIuanBnfDc1YmI2MThlYTEwMDY1YWVlYTg5MGQ5ZjdlNWQ1N2ZlNmVkYTI1YzQwMzU4YTgwYmJmMTZiMWY2ZmEyMjQ5MGY",
+  name:"IFALCON 55 INCH SMART TV",
+  price:"90,999.00",
+  strikedprice:"99,900.00",
+  saved:"34%"
+}
+]
+let container5=document.getElementById("TCL");
+display(tcl);
+function display(tcl){
+for(i=0;i<tcl.length-4;i++){
+  let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=tcl[i].image;
+let a=document.createElement("a");
+a.setAttribute("href","");
+let h4=document.createElement("h4");
+h4.innerText=tcl[i].name;
+a.append(h4);
+let span=document.createElement("span");
+span.innerText=tcl[i].price;
+let p1=document.createElement("p");
+p1.innerText="Offer Price: INR "
+p1.append(span);
+let span2=document.createElement("span");
+span2.innerText=tcl[i].strikedprice;
+let p2=document.createElement("p");
+p2.innerText="M.R.P: INR "
+p2.append(span2);
+let s=document.createElement("s");
+s.append(p2);
+let span3=document.createElement("span");
+span3.innerText=tcl[i].saved;
+let p3=document.createElement("p");
+p3.innerText="You Save: ";
+p3.append(span3);
+product.append(img,a,p1,s,p3);
+container5.append(product);
+}
+
+}
+
+let leftbtn7=document.getElementById("leftbtn7");
+  let rightbtn7=document.getElementById("rightbtn7");
+  let divstate5=3;
+  let N4=tcl.length;
+  rightbtn7.addEventListener("click",function(){
+    divstate5++;
+    if(divstate5>4){
+      divstate5=0;
+      N4=tcl.length-4;
+    }
+    if(divstate5==1){
+      divstate5=4;
+      N4=tcl.length
+    }
+    container5.innerHTML="";
+   
+    for(i=divstate5;i<N4;i++){
+  let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=tcl[i].image;
+let a=document.createElement("a");
+a.setAttribute("href","");
+let h4=document.createElement("h4");
+h4.innerText=tcl[i].name;
+a.append(h4);
+let span=document.createElement("span");
+span.innerText=tcl[i].price;
+let p1=document.createElement("p");
+p1.innerText="Offer Price: INR "
+p1.append(span);
+let span2=document.createElement("span");
+span2.innerText=tcl[i].strikedprice;
+let p2=document.createElement("p");
+p2.innerText="M.R.P: INR "
+p2.append(span2);
+let s=document.createElement("s");
+s.append(p2);
+let span3=document.createElement("span");
+span3.innerText=tcl[i].saved;
+let p3=document.createElement("p");
+p3.innerText="You Save: ";
+p3.append(span3);
+product.append(img,a,p1,s,p3);
+container5.append(product);
+}
+
+  })
+leftbtn7.addEventListener("click",function(){
+  divstate5++;
+    if(divstate5>4){
+      divstate5=0;
+      N4=tcl.length-4;
+    }
+    if(divstate5==1){
+      divstate5=4;
+      N4=tcl.length
+    }
+    container5.innerHTML="";
+   
+    for(i=divstate5;i<N4;i++){
+  let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=tcl[i].image;
+let a=document.createElement("a");
+a.setAttribute("href","");
+let h4=document.createElement("h4");
+h4.innerText=tcl[i].name;
+a.append(h4);
+let span=document.createElement("span");
+span.innerText=tcl[i].price;
+let p1=document.createElement("p");
+p1.innerText="Offer Price: INR "
+p1.append(span);
+let span2=document.createElement("span");
+span2.innerText=tcl[i].strikedprice;
+let p2=document.createElement("p");
+p2.innerText="M.R.P: INR "
+p2.append(span2);
+let s=document.createElement("s");
+s.append(p2);
+let span3=document.createElement("span");
+span3.innerText=tcl[i].saved;
+let p3=document.createElement("p");
+p3.innerText="You Save: ";
+p3.append(span3);
+product.append(img,a,p1,s,p3);
+container5.append(product);
+}
+
+}) 
+</script>
