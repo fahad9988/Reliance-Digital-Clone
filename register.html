@@ -4,7 +4,7 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Login or Register to shop online with Reliance Digital</title>
+ <title>Register to create a shopping account with Reliance Digital Online</title>
 </head>
 <style>
   body{
@@ -215,12 +215,6 @@ text-decoration: underline;
 
 
 
-
-
-
-
-
-
 form{
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    width: 40%;
@@ -271,7 +265,6 @@ font-size: 17px;
   p{
    margin-bottom: 5px;
   }
-
   p:last-child{
    text-align: center;
   
@@ -282,7 +275,7 @@ font-size: 17px;
    text-decoration: none;
    font-weight: bold;
   }
- 
+
 </style>
 <body>
   <!--Header Below-->
@@ -373,20 +366,25 @@ font-size: 17px;
 
 <!--Content Below-->
 <form>
-  <div><h2>Login</h2></div>
-  <div>
-   <p>Email Address*</p>
-   <input type="email" id="email" placeholder="Email Address*" >
-   <p>Password*</p>
-   <input type="password" id="password" placeholder="Password*">
+ <div><h2>Register New Account</h2></div>
+ <div>
+  <p>First Name*</p>
+  <input type="text" placeholder="First Name*" id="firstname">
+  <p>Last Name*</p>
+  <input type="text" placeholder="Last Name*" id="lastname">
+  <p>Email Address*</p>
+  <input type="email" id="email" placeholder="Email Address*" >
+  <p>Password*</p>
+  <input type="password" id="password" placeholder="Password*">
+  <p>Mobile Number*</p>
+  <input type="number" id="number" placeholder="Mobile Number*" >
+  <br>
+  <input type="submit" value="PROCEED" id="submit">
+  <p>Already Registered? <a href="login.html">LOGIN</a></p>
+ </div>
 
-   <input type="submit" value="PROCEED" id="submit">
-   <p>Not Registered? <a href="register.html">Click here to Register!</a></p>
-  </div>
  
-  
- </form>
- 
+</form>
 
  <!--Footer Below-->
  <div id="footer">
@@ -460,32 +458,31 @@ font-size: 17px;
 </body>
 </html>
 
+
 <script>
-let form=document.querySelector("form");
-let registeredarr=JSON.parse(localStorage.getItem("registerData"))||[];
-form.addEventListener("submit",function(e){
-  e.preventDefault();
-  let loginobj={
-    email:form.email.value,
-    password:form.password.value
-  }
-  if(loginobj.email==""||loginobj.password==""){
-    alert("Input Fields cannot be empty!")
-  }else{
-  let flag=false;
-  registeredarr.forEach(function(e){
-   if(e.email==loginobj.email&& e.password==loginobj.password){
-    flag=true;
-    alert("Login Successful");
-    localStorage.setItem("flag",flag);
-localStorage.setItem("loginData",JSON.stringify(e));
-   window.location.href="index.html"
-   }
-  })
-  if(flag==false){
-    alert("Entered invalid email or password!");
-    localStorage.setItem("flag",flag);
-  }
+
+ let form=document.querySelector("form");
+ let registerarr=JSON.parse(localStorage.getItem("registerData"))||[];
+
+form.addEventListener("submit",function(event){
+event.preventDefault();
+let registerobj={
+ firstName:document.querySelector("#firstname").value,
+ lastName:document.querySelector("#lastname").value,
+ email:document.querySelector("#email").value,
+ password:document.querySelector("#password").value,
+ number:document.querySelector("#number").value,
 }
- });
+if(registerobj.firstName==""||registerobj.lastName==""||registerobj.email==""||registerobj.password==""||registerobj.number==""){
+ alert("Fill all the input fields with an Asterisk.");
+ document.querySelector("#submit").setAttribute("disabled",true);
+}else{
+  alert("Registration Successful");
+  registerarr.push(registerobj);
+localStorage.setItem("registerData",JSON.stringify(registerarr));
+window.location.href="login.html";
+}
+
+})
+
 </script>

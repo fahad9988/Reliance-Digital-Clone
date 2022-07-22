@@ -662,7 +662,7 @@ display: flex;
     <a href=""> Select your location</a>
     <a href="" ><img src="https://www.freeiconspng.com/uploads/basket-cart-icon-27.png"  alt="basket cart icon" style="width:1.5vw ;"/> Cart</a>
 
-    <a href="login.html" ><img src="https://www.freeiconspng.com/uploads/black-login-icon--0.png"  alt="black Login icon " style="width:1.5vw ;"/> Login</a>
+    <a id="fahad" href="login.html" ><img src="https://www.freeiconspng.com/uploads/black-login-icon--0.png"  alt="black Login icon " style="width:1.5vw ;"/> Login</a>
    </div>
   </div>
   <div id="nav2">
@@ -1840,4 +1840,16 @@ container5.append(product);
 }
 
 }) 
+</script>
+
+
+
+<script>
+  let FLAG=JSON.parse(localStorage.getItem("flag"));
+  let logindata=JSON.parse(localStorage.getItem("loginData"));
+  let name=logindata.firstName;
+  if(FLAG==true){
+document.querySelector("#fahad").innerText="Hi "+name;
+
+  }
 </script>
