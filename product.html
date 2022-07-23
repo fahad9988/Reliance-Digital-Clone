@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Laptop</title>
+</head>
+<style>
+  body{
+    margin: 0px;
+  
+  }
+#navCont{
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+  #nav01{
+    height:30px;
+    background-color: #E42529;
+    font-size: 17px;
+display: grid;
+grid-template-columns: repeat(7,1fr);
+align-items: center;
+text-align: center;
+border-bottom: 1px solid white;
+  }
+  #nav01>a{
+    border-right: 1px solid white;
+font-weight: bold;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-decoration: none;
+display: block;
+  }
+  #nav1{
+   display: flex;
+   height: 70px;
+  
+  }
+
+  #nav1>div:nth-child(1){
+   width: 25%;
+   background-color: #E42529;
+  }
+  #nav1>div:nth-child(1) img{
+   width: 50%;
+ margin: 10px 0px 0px 45px;
+
+  }
+  #nav1>div:nth-child(2){
+   width: 50%;
+   background-color: #E42529;
+  }
+  #nav1>div>input{
+   width: 73%;
+   display: block;
+   margin: auto;
+   padding: 11px;
+ margin-top: 18px;
+   border-radius: 30px;
+   border: none;
+  }
+  input[type="search"]:focus {
+    box-shadow: 0 0 3px 0 #1183d6;
+  outline: none;
+}
+
+  #nav1>div:nth-child(3){
+   width: 25%;
+   font-size: 17px;
+   padding-left: 20px;
+   
+   background-color: #E42529;
+   padding-top: 20px;
+  }
+  #nav1>div:nth-child(3)>a{
+border-right: 1px solid white;
+padding: 0px 6px;
+color: white;
+text-decoration: none;
+
+  }
+
+  #nav1>div:nth-child(3)>a:nth-child(3){
+border-right: none;
+  }
+
+
+  #nav1>div:nth-child(3)>a>img{
+   width: 2vw;
+  }
+
+  
+  #nav2{
+   display: flex;
+   justify-content: space-around;
+   height: 40px;
+   background-color: #1F4985;
+  }
+ 
+  .dropdown{
+   position: relative;
+  }
+  .dropdown-content{
+   padding:20px 50px;
+   width: 15vw;
+   position: absolute;
+   z-index: 1;
+   display: none;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   background-color: darkblue;
+   
+  }
+  .dropdown:hover .dropdown-content{
+ display: block;
+}
+  #nav2>.dropdown:nth-child(8)>.dropdown-content,#nav2>.dropdown:nth-child(9)>.dropdown-content{right: 0px;
+   
+  }
+
+.dropdown>button:hover{
+ background-color: red;
+}
+.dropdown>button{
+ border: none;
+ font-size: 12px;
+ background-color: #1F4985;
+color: white;
+height: 100%;
+}
+.dropdown-content>a{
+ margin-bottom: 20px;
+ display: block;
+ text-decoration: none;
+ color: white;
+}
+
+
+
+
+
+
+
+
+
+
+#footer{
+width: 100%;
+
+background-color: #0A244A;
+}
+
+#footer>div:nth-child(1){
+display: flex;
+
+background-color: #1F4985;
+justify-content: space-evenly;
+
+}
+#footer>div:nth-child(1)>div{
+
+ width: 20%;
+ background-color: #1F4985;
+}
+#footer>div:nth-child(1)>div>a{
+ display: block;
+ margin-bottom: 12px;
+ text-decoration: none;
+ color: white;
+ font-size: 18px;
+}
+#footer>div:nth-child(1)>div>h3{
+ color: white;
+}
+#footer>div:nth-child(2){
+ display: flex;
+ justify-content: space-around;
+ background-color:#1F4985;
+ padding-bottom: 20px;
+}
+#footer>div:nth-child(2)>div:nth-child(1){
+ border:1px solid #1F4985;
+ width: 15%;
+ padding-left: 25px;
+ color: white;
+ background-color:#1F4985;
+}
+#footer>div:nth-child(2)>div:nth-child(2){
+ border:1px solid #1F4985;
+ width: 70%;
+ padding-left: 70px;
+ color: white;
+ background-color:#1F4985 ;
+ 
+}
+#footer>div:nth-child(2)>div>img{
+width: 10%;
+border-radius: 7px;
+}
+#footer>div:nth-child(3){
+ text-align: center;
+ color: white;
+ background-color: #0A244A;
+ padding-bottom: 5px;
+ 
+}
+#footer>div:nth-child(3)>h4:nth-child(1){
+text-decoration: underline;
+
+}
+
+
+
+
+
+
+#content>div:nth-child(1){
+  position: relative;
+}
+#content>div:nth-child(1) img{
+  width: 100%;
+
+}
+#content>div:nth-child(1) button{
+  position: absolute;
+  top: 43%;
+  font-size: 30px;
+  border: none;
+  background-color: rgba(100,100,100,0);
+}
+#content>div:nth-child(1) button:hover{
+  color: grey;
+}
+#content>div:nth-child(1) button:nth-child(2){
+  right: 10px;
+}
+#content>div:nth-child(1) button:nth-child(3){
+  left: 10px;
+}
+
+
+
+#content>div:nth-child(2){
+ margin-top: -4px;
+padding-left: 10px;
+padding-bottom: 10px;
+border-bottom: 1px solid  rgb(196, 194, 194);
+background-color: rgb(243, 242, 242);
+}
+#content>div:nth-child(2)>a{
+padding-left: 10px;
+text-decoration: none;
+color: black;
+font-weight: bold;
+}
+
+
+
+
+
+
+#Laptops{
+  width: 100%;
+ display: grid;
+grid-template-columns: repeat(4,1fr);
+
+gap: 10px;
+border-bottom: 7px solid rgb(196, 194, 194);
+padding-bottom: 30px;
+}
+#Laptops>div{
+border: 1px solid  rgb(196, 194, 194);
+}
+#Laptops>div>img{
+  width: 100%;
+display: block;
+margin: auto;
+}
+#content>div:nth-child(3){
+ display: flex;
+ padding-left: 25px;
+}
+#content>div:nth-child(3)>div:nth-child(1){
+ margin: 0px auto;
+ width: 63%;
+
+}
+#content>div:nth-child(3)>div:nth-child(2){
+ margin: 0px auto;
+width: 23%;
+
+}
+#content>div:nth-child(3)>div:nth-child(2)>img{
+width: 100%;
+}
+
+
+
+
+#content>div:nth-child(3){
+  position: relative;
+
+}
+
+
+
+
+#content>div:nth-child(3)>div:nth-child(1)>#leftbtn2,#content>div:nth-child(3)>div:nth-child(1)>#rightbtn2{
+  position: absolute;
+  top: 9%;
+  font-size: 30px;
+  height: 100px;
+  background-color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#content>div:nth-child(3) button:hover{
+  color:grey;
+}
+#content>div:nth-child(3) button:nth-child(3){
+  left: 20px;
+}
+#content>div:nth-child(3) button:nth-child(4){
+ right: 28.3%;
+}
+
+
+
+
+ 
+
+
+#Processor{
+  width: 100%;
+ display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 10px;
+border-bottom: 7px solid rgb(196, 194, 194);
+padding-bottom: 30px;
+}
+#Processor>div{
+border: 1px solid rgb(196, 194, 194);
+}
+#Processor>div>img{
+  width: 100%;
+}
+
+
+
+#content>div:nth-child(3)>div:nth-child(1)>#leftbtn3,#content>div:nth-child(3)>div:nth-child(1)>#rightbtn3{
+  position: absolute;
+  top: 33%;
+  font-size: 30px;
+  height: 100px;
+  background-color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#content>div:nth-child(3) button:hover{
+  color:grey;
+}
+#content>div:nth-child(3) button:nth-child(7){
+ left: 20px;
+}
+#content>div:nth-child(3) button:nth-child(8){
+  right: 28.3%;
+}
+
+
+
+
+
+#Brand{
+  width: 100%;
+ display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 5px;
+
+}
+#Brand>div{
+border: 1px solid rgb(196, 194, 194);
+padding: 50px;
+}
+#Brand>div>img{
+  width: 100%;
+
+}
+
+
+
+#container{
+  width: 90%;
+ display: grid;
+grid-template-columns: repeat(3,1fr);
+margin: auto;
+gap: 40px;
+
+}
+#container>div{
+ border: 1px solid rgb(196, 194, 194);
+ padding: 20px;
+
+}
+#container>div:hover{
+ 
+ padding: 20px;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#container>div>img{
+  width: 70%;
+display: block;
+margin: auto;
+}
+#container>div>a{
+ color:  #1F4985 ;
+ text-decoration: none;
+ font-size: 18px;
+}
+#container>div>a:hover{
+ color:  red ;
+ text-decoration: none;
+ font-size: 18px;
+}
+#container>div>p:nth-child(3){
+  color: #1F4985;
+  font-size: 17px;
+  font-weight: bold;
+}
+#container>div>s{
+  color: rgb(109, 106, 106);
+  font-size: 16px;
+}
+#container>div>p:nth-child(3),s{
+  display: block;
+}
+#container>div>p:nth-child(3)>span{
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+}
+#container>div>p:nth-child(5){
+  color: green;
+  font-size: 17px;
+  font-weight: bold;
+}
+#container button{
+ padding: 10px 25px;
+ font-size: 20px;
+ display: block;
+ margin: auto;
+ background-color: #0A244A;
+ color: white;
+}
+#container button:hover{
+ padding: 10px 25px;
+ font-size: 20px;
+ display: block;
+ margin: auto;
+ background-color: rgb(223, 221, 221);
+ color: #0A244A;
+ border:1px solid #0A244A;
+ font-weight: bold;
+}
+#content>h1{
+ margin-left: 67px;
+}
+#content>h1+div{
+ background-color: rgb(223, 221, 221);
+ height: 50px;
+ padding-top: 20px;
+ margin-bottom: 40px;
+ padding-left: 67px;
+}
+#content>h1+div>select{
+font-size: 20px;
+padding: 5px;
+margin-right: 20px;
+}
+#content>h1+div>select:hover{
+font-size: 20px;
+padding: 5px;
+margin-right: 20px;
+background-color: #1F4985;
+color: white;
+}
+</style>
+<body>
+  <!--Header Below-->
+  <div id="nav01">
+   <a href="" >Our Brand Promise</a>
+   <a href="">Easy Return</a>
+   <a href="">Next Day Delivery</a>
+   <a href="">Service Guarantee</a><a href="">Unmatched Network</a><a href="">Find a Store</a><a href="">Contact Us</a>
+ </div>
+  <div id="navCont">
+   
+   <div id="nav1">
+    <div>
+     <a href="index.html"><img src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="Error"></a>
+    </div>
+    <div>
+     <input type="search" placeholder="Find your favourite products">
+    </div>
+    <div>
+    
+     <a href=""> Select your location</a>
+     <a href="" ><img src="https://www.freeiconspng.com/uploads/basket-cart-icon-27.png"  alt="basket cart icon" style="width:1.5vw ;"/> Cart</a>
+ 
+     <a id="fahad" href="login.html" ><img src="https://www.freeiconspng.com/uploads/black-login-icon--0.png"  alt="black Login icon " style="width:1.5vw ;"/> Login</a>
+    </div>
+   </div>
+   <div id="nav2">
+    <div class="dropdown">
+       <button>MOBILES & TABLETS &#709;</button>
+       <div class="dropdown-content">
+        <a href="">Smartphones</a><a href=""> OnePlus Nord 2T 5G</a><a href=""> Wearable Technology</a><a href="">Smart Watch Accessories</a><a href="">  Accessories</a><a href="">Tablet Accessories</a><a href=""> Mobile Accessories</a><a href=""> Mobile Grips & Stands</a><a href="">  Car Mobile Holders</a>
+       </div>
+    </div>
+    <div class="dropdown">
+     <button>TELEVISIONS &#709;</button>
+     <div class="dropdown-content">
+      <a href="">Smart TV's</a><a href=""> 32 inch TV's</a><a href="">43 inch TV's</a><a href="">55 inch TV's</a><a href="">  Android TV's</a>
+     </div>
+  </div>
+  <div class="dropdown">
+   <button>HEADPHONES & SPEAKERS &#709;</button>
+   <div class="dropdown-content">
+    <a href="">Headphones & Headsets</a><a href=""> True Wireless</a><a href="">Bluetooth Neckbands</a><a href="">Wired Earphones</a><a href=""> On Ear Headphones</a><a href=""> Noise Cancelling Headphones</a>
+   </div>
+ </div>
+ <div class="dropdown">
+  <button>HOME APPLIANCES &#709;</button>
+  <div class="dropdown-content">
+   <a href="">Air Conditioners</a><a href="">  Split Air Conditioners</a><a href=""> Window Air Conditioners</a><a href="">Smart Air Conditioners</a><a href="">   1 ton Air Conditioners</a><a href=""> 1.5 ton Air Conditioners</a><a href="">   5 star Air Conditioners</a>
+  </div>
+ </div>
+ <div class="dropdown">
+  <button>COMPUTERS &#709;</button>
+  <div class="dropdown-content">
+   <a href="product.html">Laptops</a><a href=""> Basic use laptops</a><a href=""> Student Laptops</a><a href="">Thin and light Laptops</a><a href="">   Multi-Tasking Laptops</a><a href=""> Gaming Laptops</a><a href="">Content creator Laptops</a><a href=""> Desktops & All-In-Ones</a><a href="">  Computer Monitor</a>
+  </div>
+ </div>
+ <div class="dropdown">
+  <button>CAMERAS &#709;</button>
+  <div class="dropdown-content">
+   <a href="">DSLR Cameras</a><a href="">  Mirrorless Cameras</a><a href="">  Point & Shoot Cameras</a><a href=""> ProSumer Cameras</a><a href="">  Action Cameras</a>
+  </div>
+ </div>
+ <div class="dropdown">
+  <button>KITCHEN APPLIANCES &#709;</button>
+  <div class="dropdown-content">
+   <a href="">Microwave Ovens</a><a href="">  Water Purifiers</a><a href="">    Fruits and Vegetable Cleaner</a><a href=""> Oven Toaster Grillers (OTG)</a><a href=""> Cookwares</a><a href="">Tablet Accessories</a><a href="">  Juicer Mixer Grinders</a>
+ </div>
+ </div>
+ <div class="dropdown">
+  <button>PERSONAL CARE &#709;</button>
+  <div class="dropdown-content">
+   <a href="">Shavers & Trimmers</a><a href=""> Epilators</a><a href="">  Hair Dryers & Stylers</a><a href="">  Weighing Scales</a><a href="">  Accessories</a><a href="">Irons</a>
+  </div>
+ </div>
+ <div class="dropdown">
+  <button>ACCESSORIES &#709;</button>
+  <div class="dropdown-content">
+   <a href="">Batteries & PowerBanks</a><a href=""> Cables & Cords</a><a href="">  Chargers & Adapters</a><a href="">Bluetooth & WiFi Speakers</a><a href=""> Audio/Video Accessories</a><a href="">Reconnect Disney</a><a href=""> Memory Cards</a><a href="">  Mounts & Stands</a><a href="">  Pen Drives</a>
+ 
+ </div>
+ 
+  
+  
+  </div>
+  </div>
+ </div>
+
+<!--Content Below-->
+<div id="content">
+
+<!--1ST DIV BELOW-->
+<div >
+ <div>
+   <img id="crauser1" src="https://www.reliancedigital.in/medias/Back-to-School-Carousel-Banner-27-06-2022-05.jpg?context=bWFzdGVyfGltYWdlc3wxMDA4MzR8aW1hZ2UvanBlZ3xpbWFnZXMvaGY5L2g2NC85ODU4MjE3ODAzODA2LmpwZ3wzYjk2Nzg0MmIzZWQxYzk4NDhiZWUzODM4Y2Y4ZTQ0ZjNiMmNiN2I5OTkyMDUwNzJjNGU3MWZiZGVjYWRiYTI3" alt="">
+   <button id="rightbtn1">></button>
+   <button id="leftbtn1"><</button>
+ </div>
+</div>
+<!--1ST DIV ABOVE-->
+
+
+<!--2ND DIV BELOW-->
+<div>
+ <a href="index.html" ><img  src="https://www.freeiconspng.com/uploads/gallery-homepage-icon-png-2.png" style="width:1.8% ;padding-top: 3px;" /> &nbsp;></a>
+ <a href="product.html"">Laptops</a>
+</div>
+<!--2ND DIV ABOVE-->
+
+<!--3RD DIV BELOW-->
+<div>
+ <div id="grandChildDiv1">
+  <h2>SHOP BY CATEGORY | <a href="" style="font-size: 16px;text-decoration:none">View All</a></h2>
+  <div id="Laptops"></div>
+  <button id="leftbtn2"><</button>
+  <button id="rightbtn2">></button>
+  <h2>CHOOSE YOUR PROCESSOR | <a href="" style="font-size: 16px;text-decoration:none">View All</a></h2>
+  <div id="Processor"></div>
+  <button id="leftbtn3"><</button>
+  <button id="rightbtn3">></button>
+
+  <h2>SHOP BY BRAND | <a href="" style="font-size: 16px;text-decoration:none">View All</a></h2>
+  <div id="Brand">
+   <div><img src="https://www.reliancedigital.in/medias/HP-Logo.jpg?context=bWFzdGVyfGltYWdlc3w3MDE0fGltYWdlL2pwZWd8aW1hZ2VzL2g0MC9oN2YvOTExNzQyMTE0MjA0Ni5qcGd8NmJiNTU2N2FlZGQ5ZGFmMTU1NzNhMzRmNmU1NmVkNTA1MjNjYjE4MjQxMmZhZGRkOGZhNDliNDU3ZWFiODdjZg" alt=""></div>
+   <div><img src="https://www.reliancedigital.in/medias/Lenovo-Logo.jpg?context=bWFzdGVyfGltYWdlc3w2ODM5fGltYWdlL2pwZWd8aW1hZ2VzL2gxOS9oN2EvOTExNzQyMTMzODY1NC5qcGd8YTRiNzM0MzE5MDliMmRkYjVmMmUzZGYzZjNlYTJiZjIzODJjODFhNzVlMjgyMDRlNTlhM2MzNDg3NGQxNzZlMg" alt=""></div>
+   <div><img src="https://www.reliancedigital.in/medias/Dell-Logo.jpg?context=bWFzdGVyfGltYWdlc3w2NDU1fGltYWdlL2pwZWd8aW1hZ2VzL2gyZi9oZjQvOTExNzQyMTIwNzU4Mi5qcGd8OGQ0YWQ0NzFmZGEwNjAyNWRjODVmMmI0MTk1NGNkM2U4MDg2ZTYyMDRkN2U0MmZlOTEzNWE2M2U4ZWQ2NDZkOA" alt=""></div>
+   <div><img src="https://www.reliancedigital.in/medias/Acer.jpg?context=bWFzdGVyfGltYWdlc3w2Mzk1fGltYWdlL2pwZWd8aW1hZ2VzL2gxOS9oOWIvOTg1NzUxNDAxMjcwMi5qcGd8YjY5NTFmNmE4NWY1NjYwNDY1ZTc0MmNlZmQwYThkYTE2NTEyZGY4YzNmZjIxMGJlNTk2MDJjY2ZkN2YxMGU4Nw" alt=""></div>
+   <div><img src="https://www.reliancedigital.in/medias/Apple-Logo-1.jpg?context=bWFzdGVyfGltYWdlc3wyMjc2fGltYWdlL2pwZWd8aW1hZ2VzL2g3Ny9oMTIvOTExNzQyMTI3MzExOC5qcGd8MzZiYjcyM2E4MzNlZWFmY2I1MDFkMjczYzBlOGQwNTE5ZThhNTRiZTZmNTYxODllNDk3NWQ2YmQ4ZDE3YWQ2NQ" alt=""></div>
+   <div><img src="https://www.reliancedigital.in/medias/Asus-Logo.jpg?context=bWFzdGVyfGltYWdlc3w2MjIxfGltYWdlL2pwZWd8aW1hZ2VzL2g5ZS9oMTcvOTExNzQyMTQ2OTcyNi5qcGd8MzM0ZTA3M2Q5M2NhYzlmNGM2MGNkZWIzNGE2OTA1M2EyYjkxYWNhM2NhOTk5MDI3Mjk5YzdiYTg5ZjY4NDAyNw" alt=""></div>
+   <div><img src="https://www.reliancedigital.in/medias/Laptops-Shop-By-Brands-Avita.jpg?context=bWFzdGVyfGltYWdlc3w3MTk1fGltYWdlL2pwZWd8aW1hZ2VzL2g2OS9oMTUvOTU4NTU4NDgzMjU0Mi5qcGd8ZmNkMmI3YmEzZjZkNjc2ZGY0ZDBkMzU3NWYxMGJiOGNkY2Q3YjMzZDVmZDgyYmQyZGI3NTA3NGJiYjZhODgxOQ" alt=""></div>
+   <div><img src="https://www.reliancedigital.in/medias/Laptops-Shop-By-Brands-VAIO.jpg?context=bWFzdGVyfGltYWdlc3wzMjEwfGltYWdlL2pwZWd8aW1hZ2VzL2hiZS9oNDkvOTU4NTU4NDg5ODA3OC5qcGd8YmMyNWNjNTViNzg1Mzg1OGU4ZDNjYTcxYzA5ZDA4MGNiNjM4YTM3MTJhYTYxODQ5YmI0ZmY0ZjlhZTYzYWUwMw" alt=""></div>
+  </div>
+<hr style="margin-top: 30px; height: 7px ;background-color:rgb(196, 194, 194) ;">
+ </div>
+ <div id="grandChildDiv2">
+  <h2>FROM OUR RESOURCE CENTRE</h2>
+  <h3>Windows 11 is finally here</h3>
+  <img src="https://www.reliancedigital.in/wp-content/uploads/2021/06/Windows_11_Cover.jpg" alt="">
+  <hr>
+  <h3>Apple MacBook Pro 2021 - New in every sense</h3>
+  <img src="https://www.reliancedigital.in/wp-content/uploads/2021/10/MacBook_Pro_2021_Cover.jpg" alt="">
+  <hr>
+  <h3>Lenovo Legion 7 2021 - Delivering total perfection</h3>
+  <img src="https://www.reliancedigital.in/wp-content/uploads/2021/10/Lenovo_Legion_7_2021_COver.jpg" alt="">
+  <hr>
+  <h3>HP Pavilion Aero 2021 - Portability without sacrifices</h3>
+  <img src="https://www.reliancedigital.in/wp-content/uploads/2021/11/HP_Pavillion_Aero_Cover.jpg" alt="">
+  <hr>
+ </div>
+</div>
+<!--3RD DIV ABOVE-->
+
+<!--4TH DIV BELOW-->
+<hr style="margin-top: 40px;height:7px;background-color: #E42529;border: none;">
+<h1>Our Best Selling Laptops</h1>
+<div>
+ <select  id="pric">
+  <option value="">Sort by Price</option>
+  <option value="Ascending">Price(Low to High)</option>
+  <option value="Descending">Price(High to Low)</option>
+ </select>
+ <select id="filter">
+  <option value="">Filter By Brand</option>
+  <option value="lenovo">Lenovo</option>
+  <option value="realme">RealMe</option>
+  <option value="msi">MSI</option>
+  <option value="hp">HP</option>
+  <option value="acer">Acer</option>
+ </select>
+</div>
+
+<div id="container">
+
+</div>
+<!--4TH DIV ABOVE-->
+
+</div>
+
+
+
+
+
+
+ <!--Footer Below-->
+ <div id="footer">
+  <div>
+   <div>
+    <h3>PRODUCT CATEGORIES</h3>
+   <a href="">Smartphones</a> 
+   <a href="">Laptops</a> 
+   <a href="">DSLR Cameras</a> 
+   <a href="">Televisions</a> 
+   <a href="">Air Conditioners</a> 
+   <a href="">Refrigerators</a> 
+   <a href="">Kitchen Appliances</a> 
+   <a href="">Accessories</a> 
+   <a href="">Personal Care & Grooming</a> 
+   
+  
+   </div>
+   <div>
+    <h3>SITE INFO</h3>
+    <a href="">About Reliance Digital</a> 
+    <a href="">resQ Services</a> 
+    <a href="">Site Map</a> 
+    <a href="">Gift Cards</a> 
+    <a href="">Corporate Enquiries</a> 
+    <a href="">Contact Us</a> 
+
+   </div>
+   <div>
+    <h3>RESOURCE CENTRE</h3>
+    <a href="">Product Reviews</a> 
+    <a href="">Buying Guides</a> 
+    <a href="">DSLR Cameras</a> 
+    <a href="">How Tos</a> 
+    <a href="">Featured Stories</a> 
+    <a href="">Events and Happenings</a> 
+   </div>
+   <div>
+    <h3>POLICIES</h3>
+    <a href="">Terms of Use</a> 
+    <a href="">FAQs</a> 
+    <a href="">Cancellation and Return Policy</a> 
+    <a href="">Pricing and Payments Policy</a> 
+    <a href="">Privacy Policy</a> 
+    <a href="">E-Waste Policy</a> 
+    <a href="">EMI and Additional Cashback T&C</a>
+    <a href="">RelianceOne Loyalty Program T&C</a> 
+    
+   </div>
+   
+  </div>
+  <div>
+   <div><h3>FOLLOW US</h3>
+    <img src="https://www.freeiconspng.com/uploads/-van-de-laatste-nieuwsberichten-volg-ons-via-twitter-en-facebook-4.png"/>
+ <img src="https://www.freeiconspng.com/uploads/twitter-icon--flat-gradient-social-iconset--limav-2.png"/>
+</div>
+<div><h3>EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h3>
+<img src="https://www.reliancedigital.in/build/client/images/google_play_store.png" alt="" style="width:15% ;">
+<img src="https://www.reliancedigital.in/build/client/images/ios_app_store_icon.png" alt="" style="width:15% ;">
+</div>
+</div>
+  <div>
+   <h4>Disclaimer</h4>
+   <h5 style="width: 90%;margin:auto;margin-top:-10px ">Product prices, offers and availability are subject to change from time to time. All prices are inclusive of taxes. Product colours & images are only for illustration and they may not exactly match with the actual product. Product specs are subject to change & may vary from actual product. While every care is taken to avoid inaccuracies in content, these are provided as is, without warranty of any kind.</h5>
+   <hr>
+   <h4>© 2022 Reliance Digital. All Rights Reserved.</h4>
+  </div>
+ </div>
+</body>
+</html>
+</body>
+</html>
+
+<script>
+let Craus1ImageLink=[
+    "https://www.reliancedigital.in/medias/Back-to-School-Carousel-Banner-27-06-2022-05.jpg?context=bWFzdGVyfGltYWdlc3wxMDA4MzR8aW1hZ2UvanBlZ3xpbWFnZXMvaGY5L2g2NC85ODU4MjE3ODAzODA2LmpwZ3wzYjk2Nzg0MmIzZWQxYzk4NDhiZWUzODM4Y2Y4ZTQ0ZjNiMmNiN2I5OTkyMDUwNzJjNGU3MWZiZGVjYWRiYTI3",
+    "https://www.reliancedigital.in/medias/intel-12th-Gen-Gaming-Laptop-CLP-Banner-13-07-2022.jpg?context=bWFzdGVyfGltYWdlc3wxMzc2Mzl8aW1hZ2UvanBlZ3xpbWFnZXMvaGM2L2hiZS85ODU5OTMzNjAxODIyLmpwZ3xjNGFmMmY1OWNlZWJiMmE0N2Y1OGIyMDc2YjBkYjllOWFkMWYzYWMyZTUyMTVkZTY3MTMyOTQ0YzFlZWYxMWVj","https://www.reliancedigital.in/medias/Microsoft-Surface-Laptop-Go-2-CLP-Banner-05-07-2022.jpg?context=bWFzdGVyfGltYWdlc3w2NzA5NHxpbWFnZS9qcGVnfGltYWdlcy9oNzYvaDkxLzk4NjE1MDMyMjE3OTAuanBnfGQ3YTIzMjNlZDVkNzhiZGY0ZWFlZjEyZTQ0Y2JlMTBmNmQzMWUzZjAxODYxNTRiMjIwN2I2Nzk1NzgzZWQyYjU","https://www.reliancedigital.in/medias/Laptops-D-CLP-Banner-15.07.jpg?context=bWFzdGVyfGltYWdlc3wxMDk1NTJ8aW1hZ2UvanBlZ3xpbWFnZXMvaGYwL2g5NC85ODYyMjA2NzgzNTE4LmpwZ3xmMWMwYzdlNjA2MWUzZDA4MTJiYjAzYmMyMDA1NjdhOTgyY2Q3MGQwMWViYjMyNmQxMjNjZmRmNWU5ODVhNjM1",
+    "https://www.reliancedigital.in/medias/MSI-Laptops-at-never-before-prices-14-06-2022.jpg?context=bWFzdGVyfGltYWdlc3wxMjI0NTh8aW1hZ2UvanBlZ3xpbWFnZXMvaGE1L2gwYS85ODYyMjA2OTE0NTkwLmpwZ3w4ODcwMGM2MmY2ZmFjMGQ0YmYxZGYwNWY5OGY4ZDE4YjI2NGI0NzNjMGRlZjZmMjczYTk3MzRlODVmOTMwYjA5"
+  ]
+let leftbtn1=document.querySelector("#leftbtn1");
+let rightbtn1=document.querySelector("#rightbtn1");
+let imageState=0;
+rightbtn1.addEventListener("click",function(){
+  imageState++;
+  if(imageState==Craus1ImageLink.length){
+    imageState=0;
+  }
+  document.querySelector("#crauser1").src=Craus1ImageLink[imageState];
+})
+leftbtn1.addEventListener("click",function(){
+  imageState--;
+  if(imageState<0){
+    imageState=Craus1ImageLink.length-1;
+  }
+  document.querySelector("#crauser1").src=Craus1ImageLink[imageState];
+})
+
+</script>
+
+
+<script>
+ let laptops=[{
+  image:"https://www.reliancedigital.in/medias/SHOP-BY-CATEGORY-Basic-use-laptops.jpg?context=bWFzdGVyfGltYWdlc3wzMjM0fGltYWdlL2pwZWd8aW1hZ2VzL2hiOC9oZjAvOTQ3OTg0NDIwMDQ3OC5qcGd8MmMyZTZmMDllZThkY2RhNjU5OGQ4M2VhNGI0NzBhMDMxNzU4NzMzNTYwYWM0ZDJmMzQzMDQ4ZjczODc2ZDUwZQ",
+},
+{
+  image:"https://www.reliancedigital.in/medias/SHOP-BY-CATEGORY-Student-Laptops.jpg?context=bWFzdGVyfGltYWdlc3wzNzkwfGltYWdlL2pwZWd8aW1hZ2VzL2hhMS9oZjkvOTQ3OTg0NDI2NjAxNC5qcGd8Nzc5ZWYzNTEwMzY4YmE5MjgxZTYzYmI3ZmVjZTkzZjJjYTg3ZGM1YjgxYmIzOWFiNWQ0NzYxZTM0MWU0ODEyNg",
+},
+{
+  image:"https://www.reliancedigital.in/medias/SHOP-BY-CATEGORY-Thin-and-light-Laptops.jpg?context=bWFzdGVyfGltYWdlc3wzMzA4fGltYWdlL2pwZWd8aW1hZ2VzL2g0MC9oN2IvOTQ3OTg0NDMzMTU1MC5qcGd8YzgyYTYzY2ZjNTBmMGM1Zjc3ZjcxODhkMDFlM2FjZDY4NzNlMWIxOTYxMTJjMTg3NTJmNGQxM2Q5ZGVhZDY1NA",
+},
+{
+  image:"https://www.reliancedigital.in/medias/SHOP-BY-CATEGORY-Multi-Tasking-Laptops.jpg?context=bWFzdGVyfGltYWdlc3wzNzE1fGltYWdlL2pwZWd8aW1hZ2VzL2g5NS9oYWYvOTQ3OTg0NDM5NzA4Ni5qcGd8N2MzNzNkZTY1YTM1NDQzY2NmN2U2OTYwYmIyM2UwZDEwNDdlNGVlMTgyMjhmMjk4ODFiNGM2YWUxNjMzZTUzNA",
+
+},
+{
+  image:"https://www.reliancedigital.in/medias/SHOP-BY-CATEGORY-Gaming-Laptops.jpg?context=bWFzdGVyfGltYWdlc3wzNjQ3fGltYWdlL2pwZWd8aW1hZ2VzL2g3Ny9oMTYvOTQ3OTg0NDQ2MjYyMi5qcGd8Njg2MzcwYmJkODUwNWUyZjM4Yzg0ZDlkZmZkZGI4NTgzYzZkY2E5M2VkNzM5YmJlNzAwODU3MjliYjU4Yjk3Yg",
+},
+{
+  image:"https://www.reliancedigital.in/medias/SHOP-BY-CATEGORY-Content-creator-Laptops.jpg?context=bWFzdGVyfGltYWdlc3w0MjQ3fGltYWdlL2pwZWd8aW1hZ2VzL2g1Yy9oMzUvOTQ3OTg0NDUyODE1OC5qcGd8NzZiOGQ0YWI5NjBhZjFmZjgzOGQ4ZWIwMmY5ODdhZjIyNzdkNTU4Njc5NjJjNjdiODYxNTQxNmU3ODhhOGMwMg",
+}
+]
+let container=document.getElementById("Laptops");
+display(laptops);
+function display(laptops){
+for(i=0;i<laptops.length-2;i++){
+  let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=laptops[i].image;
+
+product.append(img);
+container.append(product);
+}
+
+}
+
+let leftbtn2=document.getElementById("leftbtn2");
+  let rightbtn2=document.getElementById("rightbtn2");
+  let divstate=1;
+  let N=laptops.length;
+  rightbtn2.addEventListener("click",function(){
+    divstate++;
+    if(divstate>2){
+      divstate=0;
+      N=laptops.length-2;
+    }
+    if(divstate==1){
+      divstate=2;
+      N=laptops.length
+    }
+    container.innerHTML="";
+  
+    for(i=divstate;i<N;i++){
+  let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=laptops[i].image;
+
+product.append(img);
+container.append(product);
+}
+
+  })
+leftbtn2.addEventListener("click",function(){
+ divstate++;
+    if(divstate>2){
+      divstate=0;
+      N=laptops.length-2;
+    }
+    if(divstate==1){
+      divstate=2;
+      N=laptops.length
+    }
+    container.innerHTML="";
+  
+    for(i=divstate;i<N;i++){
+  let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=laptops[i].image;
+
+product.append(img);
+container.append(product);
+}
+})
+</script>
+
+<script>
+ let processor=[{
+  image:"https://www.reliancedigital.in/medias/Shop-by-Processor-Core-i3.jpg?context=bWFzdGVyfGltYWdlc3w3MjI0fGltYWdlL2pwZWd8aW1hZ2VzL2gxZS9oNGIvOTI5OTk3NzkyODczNC5qcGd8OGViMDg4Y2ZmMTlkODAyYzQ2NWVhN2ZhYzc4MDY3OWQ2ZTllNmMxN2FjMTRlYWE0ZTU0NmM1OWMzZjgwYjgzYg",
+},
+{
+  image:"https://www.reliancedigital.in/medias/Shop-by-Processor-Core-i5.jpg?context=bWFzdGVyfGltYWdlc3w3MjE0fGltYWdlL2pwZWd8aW1hZ2VzL2hjZC9oOGQvOTI5OTk3Nzk5NDI3MC5qcGd8MjEyN2YyYWVmNGFhYjdjN2E0NjYwNzJhMmIwNTFmYTBmYTc0MmM3MjlhMTY2ZjViOWNjMGNkZDE2MWE4ZDYyZg",
+},
+{
+  image:"https://www.reliancedigital.in/medias/processor-i7-i9.jpg?context=bWFzdGVyfGltYWdlc3w3NzQ2fGltYWdlL2pwZWd8aW1hZ2VzL2hhNS9oNWEvOTI5OTk3ODA1OTgwNi5qcGd8OThlMGU3OWI1YjU5NWRmZDZjZTNlZjQ1NDg4Y2ExMGI0MGY3M2ZkOTVjYWFlNjEyMTk4ODUyM2Y2NTlkMjE3MA",
+},
+{
+  image:"https://www.reliancedigital.in/medias/processor-Ryzen.jpg?context=bWFzdGVyfGltYWdlc3w3MjE3fGltYWdlL2pwZWd8aW1hZ2VzL2g1ZC9oNTAvOTI5OTk3ODE5MDg3OC5qcGd8OThhMWE1YWMzMDM5ZWFiOTQ2YzU3MjI0NTJhY2YzOThhOGRkNDU2YjY5NjhmMjk1NmIxYWQ3NGM1YzVhZTgwYg",
+
+},
+{
+  image:"https://www.reliancedigital.in/medias/Shop-by-Processor-Celeron-PQC.jpg?context=bWFzdGVyfGltYWdlc3w4MDA0fGltYWdlL2pwZWd8aW1hZ2VzL2g4ZS9oY2IvOTI5OTk3ODQyMDI1NC5qcGd8ZmY2MzA3NjYxZTk1OTE5YjBhNmFmNTFkNjhmYzM1ZGE3ZjQ0YmZlNDVjMWIzNjhmM2YzODhkM2Y2ZTExZTNkYw",
+}
+]
+let container1=document.getElementById("Processor");
+display(processor);
+function display(processor){
+for(i=0;i<processor.length-1;i++){
+  let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=processor[i].image;
+
+product.append(img);
+container1.append(product);
+}
+
+}
+
+let leftbtn3=document.getElementById("leftbtn3");
+  let rightbtn3=document.getElementById("rightbtn3");
+  let divstate1=0;
+  let N1=processor.length;
+  rightbtn3.addEventListener("click",function(){
+    divstate1++;
+    console.log(divstate1)
+    if(divstate1>1){
+      divstate1=0;
+      N1=processor.length-1;
+    }
+    if(divstate1==1){
+      divstate1=1;
+      N1=processor.length
+    }
+    container1.innerHTML="";
+  
+    for(i=divstate1;i<N1;i++){
+  let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=processor[i].image;
+
+product.append(img);
+container1.append(product);
+}
+
+  })
+leftbtn3.addEventListener("click",function(){
+ divstate1++;
+    if(divstate1>1){
+      divstate1=0;
+      N1=processor.length-1;
+    }
+    if(divstate1==1){
+      divstate1=1;
+      N1=processor.length
+    }
+    container1.innerHTML="";
+  
+    for(i=divstate1;i<N1;i++){
+  let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=processor[i].image;
+
+product.append(img);
+container1.append(product);
+}
+})
+</script>
+
+<script>
+ let laptoparr=[{
+  image:"https://www.reliancedigital.in/medias/Acer-15-Aspire3-R3-Laptop-492849812-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MjAwN3xpbWFnZS9qcGVnfGltYWdlcy9oM2MvaDMyLzk4NDEyMjc0OTc1MDIuanBnfDEwNjk4MWE3MTQ5MmY1YjJkMjE1NWYwMTFkNDlhMTViNmNkMmFjOGFjODE5NTEwYzdkZTA2MDJhYWM1MTVjYzI",
+  name:"Acer A315-23 Aspire 3 Laptop AMD Ryzen-3/4 GB/256",
+  brand:"acer",
+  price:"29,990.00",
+  Price:"29990",
+  strikedprice:"39,999.00",
+  saved:"25%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Acer-A314-35-Laptop-492849921-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNzIxM3xpbWFnZS9qcGVnfGltYWdlcy9oMTcvaGQ5Lzk4MTkzMTc0MDM2NzguanBnfDdiZDg3ZTA1NjE0MTE1NzFjNGU3NDE3OTMyYzc0NzljMzRiM2RjNjE5OGFhN2U1YWVhNjQ3YmI5YTMwM2JhNjI",
+  name:"Acer A314-35 Aspire 3 Laptop AMD Ryzen-3/4 GB/256",
+  brand:"acer",
+  price:"29,999.00",
+  Price:"29999",
+  strikedprice:"42,999.00",
+  saved:"37%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/HP-14s-dq3032tu-Laptops-492849723-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1Mjk3N3xpbWFnZS9qcGVnfGltYWdlcy9oNmQvaDY4Lzk4MDcxMDAwNTE0ODYuanBnfDk1ZTliOGMwYjUzMDExODFkZDRkZDQyYmZmZWM4M2I1OGExN2E2MGIyMDkwM2NlZTdmYzA3NWM0NzAwY2YzMmE",
+  name:"HP 14s-dq303tu Thin and Light Laptop Intel Celeron",
+  brand:"hp",
+  price:"31,990.00",
+  Price:"31990",
+  strikedprice:"37,006.00",
+  saved:"14%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/HP-533U4PAACJ-Laptop-492849312-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMzM2MnxpbWFnZS9qcGVnfGltYWdlcy9oY2UvaGNkLzk4MjQ0MzU0NzAzNjYuanBnfDc0YTRhMTY0NzNlMjQ5YzY2MDg3ZmU2YjQyNmNhNzU0ODQ5ZjkyOGE1N2RjMDBhZTM4YTM5ZjQ4ZTlhMmM0NTE",
+  name:"HP 15s-gk354 11-Gen-Intel-Core-I5 Laptop 12 inch Touch Screen",
+  brand:"hp",
+  price:"55,990.00",
+  Price:"55990",
+  strikedprice:"65,444.00",
+  saved:"14%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Lenovo-8JIN-Laptops-492850142-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMDYyNHxpbWFnZS9qcGVnfGltYWdlcy9oZWYvaGE0Lzk4NDk0MDkwMTE3NDIuanBnfDE4ZGNiN2ZkMzM4YWU3Yjc2YTJmZjRmNjk4OWY1N2YzY2I1NDAxOGM1ZDU5YTIxNDAzNjVhZGEzNGEyOGZmZDc",
+  name:"Lenovo 8J In IdeaPad Slim 3 Laptop 14 inch Touch Screen",
+  brand:"lenovo",
+  price:"31,490.00",
+  Price:"31490",
+  strikedprice:"53,790.00",
+  saved:"41%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Lenovo-41IN-Laptops-492850143-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2NzU3MXxpbWFnZS9qcGVnfGltYWdlcy9oNzQvaGVkLzk4NDkyMzgzMjMyMzAuanBnfDA0NWNmNjdiOWE2ZjAyMDBhZjNjNWVhNThjNmJlYmE3MDc1NTc4MWU1MGJjZjgzYTNlYzBjYWVlOGI5NTZmY2Y",
+  name:"Lenovo 41 In IdeaPad Slim 3 Laptop 8th GEN 16 inch Touch Screen",
+  brand:"lenovo",
+  price:"31,490.00",
+  Price:"31490",
+  strikedprice:"53,790.00",
+  saved:"41%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Lenovo-81WH007KIN-LAPTOP-492849666-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMDg2MnxpbWFnZS9qcGVnfGltYWdlcy9oNWIvaGI0Lzk4NDkyMzg2NTA5MTAuanBnfDY1ZTdjNmUxYzdiMDczOThhZDMzYjBlZGE1MmZlYTE5ZDZhOGNhZGEzYTU2NDk5YWQ5ODgxMTY4NjA3OTI4ZDE",
+  name:"Lenovo 53 In IdeaPad Slim 3 Laptop 11th GEN Intel Celeron",
+  brand:"lenovo",
+  price:"27,999.00",
+  Price:"27999",
+  strikedprice:"40,490.00",
+  saved:"31%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Lenovo-DFIN-Laptops-492574971-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1ODQ5MHxpbWFnZS9qcGVnfGltYWdlcy9oYWUvaDcyLzk3NTkzNzM4MTk5MzQuanBnfDczNTA3OWQyNWM3OTdkNjc1NjE1MzM1MzA2OTBlNjY2YThhMWJlYjA5YjZiYjY0NDViMzVmNjdmN2VkY2ZkMDA",
+  name:"Lenovo DFIN Iddea Pad 3 Laptop 10th Gen Intel Core I5",
+  brand:"lenovo",
+  price:"45,990.00",
+  Price:"45990",
+  strikedprice:"79,690.00",
+  saved:"42%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Lenovo-EFIN-Laptops-492574972-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1ODkwMXxpbWFnZS9qcGVnfGltYWdlcy9oMTQvaGEzLzk3NTk1MDUyMTk2MTQuanBnfGQ3NGVlNjAzOTI0Y2IzNDVkMjA4ZDE2MWM3NWRlYmI5ZjNkZGFhZWUyMDk2ZGQzZjU1MjkxNmEzMmU3ZTQxYWE",
+  name:"Lenovo EFIN Iddea Pad 3 Laptop 11th Gen Intel Core I3",
+  brand:"lenovo",
+  price:"35,990.00",
+  Price:"35990",
+  strikedprice:"60,790.00",
+  saved:"41%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/realme-RMNB1001-Laptops-492574061-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w4MTg1MHxpbWFnZS9qcGVnfGltYWdlcy9oMTYvaGY3Lzk3MzQ1MDU3NTg3NTAuanBnfGM2YzVmOWM0M2I0Y2M3ZTdhNjBlYjQzYmViMzFkNGMxN2FmNTQ0OWFhMmY1OWM3ZTkxNTg1MGE3MzlmMjg5NWM",
+  name:"RealMe RMNB1001 Book Laptop 11th Gen Intel Core I3",
+  brand:"realme",
+  price:"43,190.00",
+  Price:"43190",
+  strikedprice:"46,999.00",
+  saved:"8%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/MSI-660IN-Laptop-492575137-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMjk5MnxpbWFnZS9qcGVnfGltYWdlcy9oNzQvaDJiLzk3ODgxNDc4NTk0ODYuanBnfDBiOWQ2NWZiOGVmZjU0MWVmNWY0NTk2YTg5OTg4ODBhZjBhYTYxYjUxNGRmZmIyZTNiMzZhY2VmOTZkN2Q4ZWU",
+  name:"MSI Modern 14 B10MW Laptop Intel 10th Gen Core I5",
+  brand:"msi",
+  price:"41,990.00",
+  Price:"41990",
+  strikedprice:"61,990.00",
+  saved:"43%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/HP-15s-dy3501TU-Laptops-492574785-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w4MTY0OXxpbWFnZS9qcGVnfGltYWdlcy9oZTUvaGQyLzk3NTgxMTExMzc4MjIuanBnfGRmOTZmYjU2ZWVmMjU2NTllZDg5YmMwMzE3NmExOGI4ZWJkYmU0Y2JiNTk1MjUzNmMzOGEyMGM5NWY0NGFjYTE",
+  name:"HP 15s-dy3501TU Laptop 11 th Gen Intel Core i3",
+  brand:"hp",
+  price:"27,999.00",
+  Price:"27990",
+  strikedprice:"40,490.00",
+  saved:"31%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Lenovo-81WH007KIN-LAPTOP-492849666-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMDg2MnxpbWFnZS9qcGVnfGltYWdlcy9oNWIvaGI0Lzk4NDkyMzg2NTA5MTAuanBnfDY1ZTdjNmUxYzdiMDczOThhZDMzYjBlZGE1MmZlYTE5ZDZhOGNhZGEzYTU2NDk5YWQ5ODgxMTY4NjA3OTI4ZDE",
+  name:"Acer 9th Generation Intel Core I7 Laptop 15.6 inch",
+  brand:"acer",
+  price:"27,999.00",
+  Price:"27999",
+  strikedprice:"40,490.00",
+  saved:"31%"
+},
+{
+  image:"https://www.reliancedigital.in/medias/Lenovo-81WH007KIN-LAPTOP-492849666-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMDg2MnxpbWFnZS9qcGVnfGltYWdlcy9oNWIvaGI0Lzk4NDkyMzg2NTA5MTAuanBnfDY1ZTdjNmUxYzdiMDczOThhZDMzYjBlZGE1MmZlYTE5ZDZhOGNhZGEzYTU2NDk5YWQ5ODgxMTY4NjA3OTI4ZDE",
+  name:"HP Gaming Laptop 11 th Gen Intel Core I8 16 inch",
+  brand:"hp",
+  price:"27,999.00",
+  Price:"27999",
+  strikedprice:"40,490.00",
+  saved:"31%"
+}
+]
+let containerr=document.getElementById("container");
+
+document.querySelector("#filter").addEventListener("change",Filter);
+let price=document.querySelector("#pric");
+price.addEventListener("change",PriceSort);
+
+display(laptoparr);
+function display(laptoparr){
+ containerr.innerHTML="";
+laptoparr.forEach(function(e){
+ let product=document.createElement("div");
+let img=document.createElement("img");
+img.src=e.image;
+let a=document.createElement("a");
+a.setAttribute("href","");
+let h4=document.createElement("h4");
+h4.innerText=e.name;
+a.append(h4);
+let span=document.createElement("span");
+span.innerText=e.price;
+let p1=document.createElement("p");
+p1.innerText="Offer Price: INR "
+p1.append(span);
+let span2=document.createElement("span");
+span2.innerText=e.strikedprice;
+let p2=document.createElement("p");
+p2.innerText="M.R.P: INR "
+p2.append(span2);
+let s=document.createElement("s");
+s.append(p2);
+let span3=document.createElement("span");
+span3.innerText=e.saved;
+let p3=document.createElement("p");
+p3.innerText="You Saved: ";
+p3.append(span3);
+let cart=document.createElement("button");
+cart.innerText="Add To Cart"
+product.append(img,a,p1,s,p3,cart);
+containerr.append(product);
+})
+}
+
+
+
+function PriceSort(){
+ 
+  let selected1=document.querySelector("#pric").value;
+  if(selected1=="Ascending"){
+    laptoparr.sort(function(a,b){
+let x=Number(a.Price);
+let y=Number(b.Price);
+return x-y;   
+})
+display(laptoparr)
+  }else
+  if(selected1=="Descending"){
+    laptoparr.sort(function(a,b){
+let x=Number(a.Price);
+let y=Number(b.Price);
+return y-x;   
+})
+display(laptoparr)
+  }
+}
+function Filter(){
+ let selected=document.querySelector("#filter").value;
+ if(selected==""){
+  display(laptoparr);
+ }else{
+  let filteredarr=laptoparr.filter(function(e){
+   return e.brand==selected;
+  })
+  display(filteredarr)
+ }
+}
+</script>
+<script>
+   let FLAG=JSON.parse(localStorage.getItem("flag"));
+  let logindata=JSON.parse(localStorage.getItem("loginData"));
+  let name=logindata.firstName;
+  if(FLAG==true){
+document.querySelector("#fahad").innerText="Hi "+name;
+  }
+</script>

@@ -42,7 +42,7 @@ text-decoration: none;
    width: 25%;
    background-color: #E42529;
   }
-  #nav1>div:nth-child(1)>img{
+  #nav1>div:nth-child(1) img{
    width: 50%;
  margin: 10px 0px 0px 45px;
 
@@ -60,6 +60,10 @@ text-decoration: none;
    border-radius: 30px;
    border: none;
   }
+  input[type="search"]:focus {
+    box-shadow: 0 0 3px 0 #1183d6;
+  outline: none;
+}
 
   #nav1>div:nth-child(3){
    width: 25%;
@@ -82,7 +86,7 @@ border-right: none;
   }
 
 
-  #nav1>div>a>img{
+  #nav1>div:nth-child(3)>a>img{
    width: 2vw;
   }
 
@@ -105,7 +109,7 @@ border-right: none;
    display: none;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    background-color: darkblue;
-   
+  
   }
   .dropdown:hover .dropdown-content{
  display: block;
@@ -242,6 +246,11 @@ text-decoration: underline;
 #content>div:nth-child(2) button:nth-child(3){
   left: 10px;
 }
+
+
+
+
+
 #LatestLaptops{
   width: 90%;
  display: grid;
@@ -254,6 +263,14 @@ gap: 20px;
   width: 70%;
 display: block;
 margin: auto;
+}
+#LatestLaptops>div>a{
+  text-decoration: none;
+ color: #1F4985;
+}
+#LatestLaptops>div>a:hover{
+  text-decoration: none;
+ color: #E42529;
 }
 #LatestLaptops>div>p,s{
   color: rgb(138, 138, 138);
@@ -306,6 +323,14 @@ gap: 20px;
   width: 70%;
 display: block;
 margin: auto;
+}
+#SmallAppliances>div>a{
+  text-decoration: none;
+ color: #1F4985;
+}
+#SmallAppliances>div>a:hover{
+  text-decoration: none;
+ color: #E42529;
 }
 #SmallAppliances>div>p,s{
   color: rgb(138, 138, 138);
@@ -533,6 +558,14 @@ padding-right: 40px;
 display: block;
 margin: auto;
 }
+#SmartWatches>div>a{
+  text-decoration: none;
+ color: #1F4985;
+}
+#SmartWatches>div>a:hover{
+  text-decoration: none;
+ color: #E42529;
+}
 #SmartWatches>div>p,s{
   color: rgb(138, 138, 138);
 }
@@ -596,6 +629,14 @@ margin-right: 110px;
 display: block;
 margin: auto;
 }
+#TCL>div>a{
+  text-decoration: none;
+ color: #1F4985;
+}
+#TCL>div>a:hover{
+  text-decoration: none;
+ color: #E42529;
+}
 #TCL>div>p,s{
   color: rgb(138, 138, 138);
 }
@@ -639,6 +680,11 @@ display: flex;
 #div11 button:nth-child(3){
   right: 25%;
 }
+
+
+
+
+
  </style>
 </head>
 <body>
@@ -652,14 +698,14 @@ display: flex;
   
   <div id="nav1">
    <div>
-    <img src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="Error">
+    <a href="index.html"><img src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="Error"></a>
    </div>
    <div>
-    <input type="text" placeholder="Find your favourite products">
+    <input type="search" placeholder="Find your favourite products">
    </div>
    <div>
    
-    <a href=""> Select your location</a>
+    <a href="" id="logout"> Select your location</a>
     <a href="" ><img src="https://www.freeiconspng.com/uploads/basket-cart-icon-27.png"  alt="basket cart icon" style="width:1.5vw ;"/> Cart</a>
 
     <a id="fahad" href="login.html" ><img src="https://www.freeiconspng.com/uploads/black-login-icon--0.png"  alt="black Login icon " style="width:1.5vw ;"/> Login</a>
@@ -693,7 +739,7 @@ display: flex;
 <div class="dropdown">
  <button>COMPUTERS &#709;</button>
  <div class="dropdown-content">
-  <a href="">Laptops</a><a href=""> Basic use laptops</a><a href=""> Student Laptops</a><a href="">Thin and light Laptops</a><a href="">   Multi-Tasking Laptops</a><a href=""> Gaming Laptops</a><a href="">Content creator Laptops</a><a href=""> Desktops & All-In-Ones</a><a href="">  Computer Monitor</a>
+  <a href="product.html">Laptops</a><a href=""> Basic use laptops</a><a href=""> Student Laptops</a><a href="">Thin and light Laptops</a><a href="">   Multi-Tasking Laptops</a><a href=""> Gaming Laptops</a><a href="">Content creator Laptops</a><a href=""> Desktops & All-In-Ones</a><a href="">  Computer Monitor</a>
  </div>
 </div>
 <div class="dropdown">
@@ -1850,6 +1896,5 @@ container5.append(product);
   let name=logindata.firstName;
   if(FLAG==true){
 document.querySelector("#fahad").innerText="Hi "+name;
-
   }
 </script>
