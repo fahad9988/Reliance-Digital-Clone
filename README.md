@@ -2,8 +2,12 @@
 
 <h2>Description</h2>
 <p>This is the clone of Reliance Digital website which is an e-commerce website which deals with the sales of electronic products. This is an individual project that I have completed in 4 days.</p>
+
+<h2>Homepage</h2>
 <img src="https://i.ibb.co/1msW618/Screenshot-7696.png" alt="Reliance Digital" border="0">
+<h2>Login/Signup Page</h2>
 <img src="https://i.ibb.co/WF6tBKD/Screenshot-7697.png" alt="Reliance Digital" border="0">
+<h2>Products Page</h2>
 <img src="https://i.ibb.co/r29hhqk/Screenshot-7699.png" alt="Reliance Digital" border="0">
 <img src="https://i.ibb.co/FJKnnkm/Screenshot-7700.png" alt="Reliance Digital" border="0">
 
