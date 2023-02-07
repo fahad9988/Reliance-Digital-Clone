@@ -9,7 +9,6 @@
 <img src="https://i.ibb.co/WF6tBKD/Screenshot-7697.png" alt="Reliance Digital" border="0">
 <h2>Products Page</h2>
 <img src="https://i.ibb.co/r29hhqk/Screenshot-7699.png" alt="Reliance Digital" border="0">
-<img src="https://i.ibb.co/FJKnnkm/Screenshot-7700.png" alt="Reliance Digital" border="2">
 
 <h2>Tech Stacks used in this project</h2>
 <ul>
